@@ -7,8 +7,8 @@ import { Component, Input } from '@angular/core';
       <div class="block-padder"><ng-content></ng-content></div>
     </div>
   `,
-  styleUrls: ['./block.component.scss'],
+  styleUrls: ['./ui-block.component.scss'],
 })
-export class BlockComponent {
+export class UIBlockComponent {
   @Input() label: string = '';
 }
