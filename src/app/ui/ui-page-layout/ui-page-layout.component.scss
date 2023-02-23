@@ -1,0 +1,6 @@
+@use 'src/styles.scss' as main;
+
+.page-layout {
+   max-width: var(--page-width);
+   max-height: var(--page-height);
+}

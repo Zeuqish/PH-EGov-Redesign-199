@@ -1,0 +1,16 @@
+@use 'src/styles.scss' as *;
+
+.columns-wrapper {
+    @include columns(1, $breakpoint-s);
+    @include responsive( $breakpoint-m ) {
+        @include columns(2, $breakpoint-s/2);
+    };
+
+    @include responsive( $breakpoint-xl ){
+        @include columns(3, $breakpoint-m/2)
+    }
+}
+
+.test{
+    display: block;
+}
