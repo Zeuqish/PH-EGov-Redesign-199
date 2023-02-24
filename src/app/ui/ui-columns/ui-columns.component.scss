@@ -1,16 +1,33 @@
 @use 'src/styles.scss' as *;
 
-.columns-wrapper {
+.columns-wrapper-disabled {
     @include columns(1, $breakpoint-s);
     @include responsive( $breakpoint-m ) {
-        @include columns(2, $breakpoint-s/2);
+        @include columns(2, calc($breakpoint-s/2));
     };
-
-    @include responsive( $breakpoint-xl ){
-        @include columns(3, $breakpoint-m/2)
+    @include responsive( $breakpoint-l ){
+        @include columns(3, calc($breakpoint-m/2));
     }
 }
 
-.test{
+.columns-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* This is better for small screens, once min() is better supported */
+    /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+    gap: 1rem;
+}
+
+.columns-wrapper > div {
+    background: #EDE7F6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+.tests{
     display: block;
+    page-break-inside: avoid;
+    @include responsive( $breakpoint-m ) {
+        display: inline-block;
+    };
 }
