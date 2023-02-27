@@ -34,3 +34,30 @@ export enum FontWeight {
   BOLD = 700,
   EXTRABOLD = 800,
 }
+
+export enum PaddingSize {
+  NONE = 0,
+  XSMALL = 12,
+  SMALL = 16,
+  MID = 24,
+  LARGE = 32,
+  XLARGE = 48,
+  XXLARGE = 64,
+}
+
+export enum SplitColumnsNumber {
+  TWO = 2,
+  THREE = 3,
+}
+
+export enum SplitColumnsPosition {
+  LEFT = 'left',
+  RIGHT = 'right',
+  NONE = 'none',
+}
+
+export enum SplitColumnsSize {
+  SMALL = 'small',
+  MID = 'mid',
+  LARGE = 'large',
+}
