@@ -1,8 +1,12 @@
 <ui-block>
     <p>Hello World!</p>
     <button>Hello Button</button>
-  </ui-block>
+</ui-block>
 
+<ui-container [paddingLeft]="PaddingSize.XXLARGE" [paddingRight]="PaddingSize.XXLARGE">
+  <ui-heading>
+    Equal-split Columns
+  </ui-heading>
   <ui-columns>
     <div>
         <ui-container [padding]="[PaddingSize.XSMALL,PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
@@ -55,9 +59,14 @@
         </ui-container>
     </div>
   </ui-columns>
+</ui-container>
+
 
   <ui-container [paddingLeft]="PaddingSize.XXLARGE" [paddingRight]="PaddingSize.XXLARGE">
-    <ui-columns-split-type [numColumns]="SplitColumnsNumber.TWO" [split]="SplitColumnsPosition.LEFT" [splitSize]="SplitColumnsSize.LARGE">
+    <ui-heading>
+        Two-split Column
+    </ui-heading>
+    <ui-columns-split-type [split]="SplitColumnsPosition.LEFT" [splitSize]="SplitColumnsSize.LARGE">
         <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
             <ui-text [fontWeight]="FontWeight.REGULAR">
                 Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
@@ -95,6 +104,68 @@
               </ui-text>
         </ui-container>
       </ui-columns-split-type>
+  </ui-container>
+
+  <ui-container [paddingLeft]="PaddingSize.XXLARGE" [paddingRight]="PaddingSize.XXLARGE">
+    <ui-heading>
+        Three-split Column
+    </ui-heading>
+    <ui-columns-three-split-type [splitSize]="SplitColumnsSize.LARGE">
+        <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
+            <ui-text [fontWeight]="FontWeight.REGULAR">
+                Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
+                egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
+                eu blandit. Duis laoreet neque turpis. Aliquam dui mauris, pretium vel
+                dignissim et, porttitor at mauris. Quisque imperdiet, neque feugiat
+                ornare viverra, mauris elit cursus urna, at porttitor ipsum velit ut
+                felis. Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Integer ultrices velit id magna mollis, nec
+                rhoncus mauris lacinia. Quisque fermentum cursus rutrum. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Aenean varius placerat lorem, ut placerat erat consectetur eget.
+                Praesent blandit elit nec augue egestas dictum. Donec varius hendrerit
+                erat, ut placerat libero ultricies ac. Maecenas blandit tortor lorem,
+                sit amet pulvinar massa euismod vel.
+              </ui-text>
+        </ui-container>
+        <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
+            <ui-text [fontWeight]="FontWeight.REGULAR">
+                Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
+                egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
+                eu blandit. Duis laoreet neque turpis. Aliquam dui mauris, pretium vel
+                dignissim et, porttitor at mauris. Quisque imperdiet, neque feugiat
+                ornare viverra, mauris elit cursus urna, at porttitor ipsum velit ut
+                felis. Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Integer ultrices velit id magna mollis, nec
+                rhoncus mauris lacinia. Quisque fermentum cursus rutrum. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Aenean varius placerat lorem, ut placerat erat consectetur eget.
+                Praesent blandit elit nec augue egestas dictum. Donec varius hendrerit
+                erat, ut placerat libero ultricies ac. Maecenas blandit tortor lorem,
+                sit amet pulvinar massa euismod vel.
+              </ui-text>
+        </ui-container>
+        <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
+            <ui-text [fontWeight]="FontWeight.REGULAR">
+                Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
+                egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
+                eu blandit. Duis laoreet neque turpis. Aliquam dui mauris, pretium vel
+                dignissim et, porttitor at mauris. Quisque imperdiet, neque feugiat
+                ornare viverra, mauris elit cursus urna, at porttitor ipsum velit ut
+                felis. Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Integer ultrices velit id magna mollis, nec
+                rhoncus mauris lacinia. Quisque fermentum cursus rutrum. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Aenean varius placerat lorem, ut placerat erat consectetur eget.
+                Praesent blandit elit nec augue egestas dictum. Donec varius hendrerit
+                erat, ut placerat libero ultricies ac. Maecenas blandit tortor lorem,
+                sit amet pulvinar massa euismod vel.
+              </ui-text>
+        </ui-container>
+      </ui-columns-three-split-type>
   </ui-container>
 
   <ui-page-layout> </ui-page-layout>
