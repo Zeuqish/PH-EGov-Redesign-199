@@ -9,7 +9,9 @@ import {
   selector: 'ui-columns-split-type',
   template: `
     <div [style]="createColumns()">
-      <ng-content></ng-content>
+      <div class="grid-wrapper">
+        <ng-content></ng-content>
+      </div>
     </div>
   `,
   styleUrls: ['./ui-columns-split-type.component.scss'],
@@ -36,6 +38,6 @@ export class UIColumnsSplitComponent implements OnInit {
       splitSizes.reverse();
     }
     //return `display: grid; gap: 1rem; grid-template-columns: ${splitSizes[0]}fr ${splitSizes[1]}fr;`;
-    return `display: grid; gap: 1rem; grid-template-columns: repeat(1, ${splitSizes[0]}fr ${splitSizes[1]}fr);`;
+    return `--left-width:${splitSizes[0]}fr; --right-width:${splitSizes[1]}fr`;
   }
 }

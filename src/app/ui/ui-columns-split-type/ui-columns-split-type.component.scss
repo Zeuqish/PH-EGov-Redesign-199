@@ -1,0 +1,25 @@
+@use 'src/styles.scss' as *;
+
+div:nth-child(1) {
+    grid-area: left;
+}
+
+div:nth-child(2){
+    grid-area: right;
+}
+
+.grid-wrapper {
+    display:grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "left"
+    "right";
+    @include responsive($breakpoint-m){
+        display:grid;
+        gap: 1rem;
+        grid-template-columns: var(--left-width) var(--right-width);
+        grid-template-areas:
+        "left" "right";
+    }
+}

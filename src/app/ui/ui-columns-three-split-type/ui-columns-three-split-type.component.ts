@@ -5,7 +5,9 @@ import { SplitColumnsPosition, SplitColumnsSize } from '../typedefs';
   selector: 'ui-columns-three-split-type',
   template: `
     <div [style]="createColumns()">
-      <ng-content></ng-content>
+      <div class="grid-wrapper">
+        <ng-content></ng-content>
+      </div>
     </div>
   `,
   styleUrls: ['./ui-columns-three-split-type.component.scss'],
@@ -27,6 +29,6 @@ export class UIColumnsThreeSplitComponent implements OnInit {
         splitSizes = [1, 2, 1];
         break;
     }
-    return `display: grid; gap: 1rem; grid-template-columns: repeat(1, ${splitSizes[0]}fr ${splitSizes[1]}fr ${splitSizes[2]}fr);`;
+    return `--left-width:${splitSizes[0]}fr; --center-width:${splitSizes[1]}fr; --right-width:${splitSizes[2]}fr;`;
   }
 }
