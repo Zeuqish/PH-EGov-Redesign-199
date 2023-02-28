@@ -45,6 +45,17 @@ export enum PaddingSize {
   XXLARGE = 64,
 }
 
+export enum BorderSize {
+  NONE = 0,
+  XSMALL = 12,
+  SMALL = 16,
+  MID = 24,
+  LARGE = 32,
+  XLARGE = 48,
+  XXLARGE = 64,
+}
+
+
 export enum SplitColumnsNumber {
   TWO = 2,
   THREE = 3,
@@ -72,4 +83,22 @@ export enum ImageSize {
   SMALL = 100,
   MID = 250,
   LARGE = 500,
+}
+
+export enum InputBoxWidth {
+  COMPACT = 70,
+  FULL = 100,
+}
+
+
+export enum InputTypes {
+  TEXT = 'text',
+  PASSWORD = 'password'
+}
+
+
+export enum ButtonTypes {
+  BUTTON = "button",
+  SUBMIT = "submit",
+  RESET = "reset",
 }

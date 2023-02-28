@@ -6,6 +6,9 @@ import { UIHeadingComponent } from './ui-heading/ui-heading.component';
 import { UIContainerComponent } from './ui-container/ui-container.component';
 import { UIColumnsSplitComponent } from './ui-columns-split-type/ui-columns-split-type.component';
 import { UIColumnsThreeSplitComponent } from './ui-columns-three-split-type/ui-columns-three-split-type.component';
+import { UIInputComponent } from './ui-input/ui-input.component';
+import { UIButtonComponent } from './ui-button/ui-button.component';
+
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
