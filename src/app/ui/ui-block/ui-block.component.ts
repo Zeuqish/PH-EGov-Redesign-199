@@ -4,7 +4,9 @@ import { Component, Input } from '@angular/core';
   selector: 'ui-block',
   template: `
     <div class="block-wrapper">
-      <div class="block-padder"><ng-content></ng-content></div>
+      <div class="block-column-item">
+        <ng-content></ng-content>
+      </div>
     </div>
   `,
   styleUrls: ['./ui-block.component.scss'],

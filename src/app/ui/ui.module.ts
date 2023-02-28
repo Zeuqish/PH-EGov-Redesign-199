@@ -10,6 +10,7 @@ import { UIColumnsThreeSplitComponent } from './ui-columns-three-split-type/ui-c
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { UIImageComponent } from './ui-image/ui-image.component';
 
 @NgModule({
   imports: [CommonModule, BrowserModule],
@@ -22,6 +23,7 @@ import { CommonModule } from '@angular/common';
     UIContainerComponent,
     UIColumnsSplitComponent,
     UIColumnsThreeSplitComponent,
+    UIImageComponent,
   ],
   exports: [
     UIBlockComponent,
@@ -32,6 +34,7 @@ import { CommonModule } from '@angular/common';
     UIContainerComponent,
     UIColumnsSplitComponent,
     UIColumnsThreeSplitComponent,
+    UIImageComponent,
   ],
 })
 export class UIModule {}

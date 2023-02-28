@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SplitColumnsPosition, SplitColumnsSize } from '../typedefs';
+import { SplitColumnsSize } from '../typedefs';
 
 @Component({
   selector: 'ui-columns-three-split-type',

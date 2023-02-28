@@ -61,3 +61,15 @@ export enum SplitColumnsSize {
   MID = 'mid',
   LARGE = 'large',
 }
+
+export enum ImageShape {
+  SQUARE = 'square',
+  RECT_HORIZONTAL = 'rectangle_horizontal',
+  RECT_VERTICAL = 'rectangle_vertical',
+  CIRCLE = 'circle',
+}
+export enum ImageSize {
+  SMALL = 100,
+  MID = 250,
+  LARGE = 500,
+}
