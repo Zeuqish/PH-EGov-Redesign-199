@@ -1,10 +1,14 @@
 import { Component, Input } from '@angular/core';
-import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
+import {
+  HeadingSize,
+  SplitColumnsPosition,
+  PaddingSize,
+} from 'src/app/ui/typedefs';
 @Component({
   selector: 'block-text',
   template: `
     <ui-block>
-      <ui-container>
+      <ui-container [paddingBottom]="PaddingSize.LARGE">
         <ng-content select="ui-heading"></ng-content>
       </ui-container>
       <ui-columns-split-type [split]="this.splitType">
@@ -30,4 +34,5 @@ export class BlockTextComponent {
 
   HeadingSize = HeadingSize;
   SplitColumnsPosition = SplitColumnsPosition;
+  PaddingSize = PaddingSize;
 }

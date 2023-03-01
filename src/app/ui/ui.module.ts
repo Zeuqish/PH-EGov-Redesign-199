@@ -14,6 +14,7 @@ import { UIImageComponent } from './ui-image/ui-image.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { UILinkComponent } from './ui-link/ui-link.component';
 
 @NgModule({
   imports: [CommonModule, BrowserModule],
@@ -27,6 +28,9 @@ import { CommonModule } from '@angular/common';
     UIColumnsSplitComponent,
     UIColumnsThreeSplitComponent,
     UIImageComponent,
+    UILinkComponent,
+    UIInputComponent,
+    UIButtonComponent,
   ],
   exports: [
     UIBlockComponent,
@@ -38,6 +42,9 @@ import { CommonModule } from '@angular/common';
     UIColumnsSplitComponent,
     UIColumnsThreeSplitComponent,
     UIImageComponent,
+    UILinkComponent,
+    UIInputComponent,
+    UIButtonComponent,
   ],
 })
 export class UIModule {}
