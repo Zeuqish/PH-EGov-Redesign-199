@@ -9,12 +9,12 @@ import {
 @Component({
   selector: 'element-table-of-contents',
   template: `
-    <div class="toc-component">
+    <div class="toc-component center">
       <ui-container
         [padding]="[
-          PaddingSize.SMALL,
-          PaddingSize.SMALL,
-          PaddingSize.XSMALL,
+          PaddingSize.MID,
+          PaddingSize.XLARGE,
+          PaddingSize.MID,
           PaddingSize.LARGE
         ]"
       >

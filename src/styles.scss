@@ -27,3 +27,8 @@ $breakpoint-xxl: 1400px;
         @content;
     }
 }
+
+// global style, should probably fix to be localized to a ui-list component
+li {
+    line-height: 2;
+}
