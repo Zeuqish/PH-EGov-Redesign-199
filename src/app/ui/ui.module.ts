@@ -11,6 +11,7 @@ import { UIButtonComponent } from './ui-button/ui-button.component';
 import { UIImageComponent } from './ui-image/ui-image.component';
 import {UIStepProgressBarComponent} from './ui-step-progress-bar/ui-step-progress-bar.component';
 import {UIProgressBarComponent} from './ui-progress-bar/ui-progress-bar.component';
+import {UIFormComponent} from './ui-form/ui-form.component';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -34,6 +35,7 @@ import { UILinkComponent } from './ui-link/ui-link.component';
     UIButtonComponent,
     UIStepProgressBarComponent,
     UIProgressBarComponent,
+    UIFormComponent
   ],
   exports: [
     UIBlockComponent,
@@ -50,6 +52,7 @@ import { UILinkComponent } from './ui-link/ui-link.component';
     UIButtonComponent,
     UIStepProgressBarComponent,
     UIProgressBarComponent,
+    UIFormComponent
   ],
 })
 export class UIModule {}
