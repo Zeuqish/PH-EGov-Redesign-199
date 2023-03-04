@@ -24,7 +24,14 @@ import {
         [splitSize]="SplitColumnsSize.LARGE"
       >
         <ui-container class="push-to-front">
-          <ui-container [paddingBottom]="PaddingSize.LARGE">
+          <ui-container
+            [padding]="[
+              PaddingSize.MID,
+              PaddingSize.XLARGE,
+              PaddingSize.MID,
+              PaddingSize.LARGE
+            ]"
+          >
             <ng-content select="ui-heading"></ng-content>
             <ng-content select="ui-button"></ng-content>
           </ui-container>

@@ -1,3 +1,10 @@
 .push-to-front {
+    max-width: 100%;
+    background: lightgray;
+    background: linear-gradient(
+        60deg,
+        rgba(215, 215, 215, 0.778) 30%,
+        rgba(255, 255, 255, 0) 100%
+    );
     z-index: 1;
 }
