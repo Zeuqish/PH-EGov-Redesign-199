@@ -8,8 +8,8 @@ import { UIColumnsSplitComponent } from './ui-columns-split-type/ui-columns-spli
 import { UIColumnsThreeSplitComponent } from './ui-columns-three-split-type/ui-columns-three-split-type.component';
 import { UIInputComponent } from './ui-input/ui-input.component';
 import { UIButtonComponent } from './ui-button/ui-button.component';
-
 import { UIImageComponent } from './ui-image/ui-image.component';
+import {UIStepProgressBarComponent} from './ui-step-progress-bar/ui-step-progress-bar.component';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -31,6 +31,7 @@ import { UILinkComponent } from './ui-link/ui-link.component';
     UILinkComponent,
     UIInputComponent,
     UIButtonComponent,
+    UIStepProgressBarComponent,
   ],
   exports: [
     UIBlockComponent,
@@ -45,6 +46,7 @@ import { UILinkComponent } from './ui-link/ui-link.component';
     UILinkComponent,
     UIInputComponent,
     UIButtonComponent,
+    UIStepProgressBarComponent,
   ],
 })
 export class UIModule {}
