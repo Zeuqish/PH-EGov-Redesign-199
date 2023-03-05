@@ -55,7 +55,6 @@ export enum BorderSize {
   XXLARGE = 64,
 }
 
-
 export enum SplitColumnsNumber {
   TWO = 2,
   THREE = 3,
@@ -90,15 +89,20 @@ export enum InputBoxWidth {
   FULL = 100,
 }
 
-
 export enum InputTypes {
   TEXT = 'text',
-  PASSWORD = 'password'
+  PASSWORD = 'password',
 }
 
-
 export enum ButtonTypes {
-  BUTTON = "button",
-  SUBMIT = "submit",
-  RESET = "reset",
+  BUTTON = 'button',
+  SUBMIT = 'submit',
+  RESET = 'reset',
+}
+
+export enum lineThickness {
+  XLIGHT = 1,
+  LIGHT = 2,
+  MID = 4,
+  BOLD = 8,
 }
