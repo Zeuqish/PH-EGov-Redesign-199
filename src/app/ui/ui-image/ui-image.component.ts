@@ -4,16 +4,12 @@ import { ImageShape } from '../typedefs';
 @Component({
   selector: 'ui-image',
   template: `
-    <div>
-      <div>
-        <img
-          class="img-wrapper"
-          [src]="this.imageSrc"
-          [alt]="this.altText"
-          [style]="shapeImage()"
-        />
-      </div>
-    </div>
+    <img
+      class="img-wrapper"
+      [src]="this.imageSrc"
+      [alt]="this.altText"
+      [style]="shapeImage()"
+    />
   `,
   styleUrls: ['./ui-image.component.scss'],
 })
