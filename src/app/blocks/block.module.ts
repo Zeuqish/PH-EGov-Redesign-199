@@ -6,6 +6,7 @@ import { BlockTextComponent } from './block-text/block-text.component';
 import { BlockBannerComponent } from './block-banner/block-banner.component';
 import { ElementsModule } from '../elements/elements.module';
 import { BlockHeaderComponent } from './block-header/block-header.component';
+import { BlockArticleComponent } from './block-article/block-article.component';
 
 @NgModule({
   imports: [CommonModule, BrowserModule, UIModule, ElementsModule],
@@ -13,7 +14,13 @@ import { BlockHeaderComponent } from './block-header/block-header.component';
     BlockTextComponent,
     BlockBannerComponent,
     BlockHeaderComponent,
+    BlockArticleComponent,
   ],
-  exports: [BlockTextComponent, BlockBannerComponent, BlockHeaderComponent],
+  exports: [
+    BlockTextComponent,
+    BlockBannerComponent,
+    BlockHeaderComponent,
+    BlockArticleComponent,
+  ],
 })
 export class BlockModule {}
