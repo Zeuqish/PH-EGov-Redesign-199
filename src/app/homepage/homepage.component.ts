@@ -6,6 +6,7 @@ import {
   SplitColumnsNumber,
   SplitColumnsPosition,
   SplitColumnsSize,
+  AlertType,
 } from '../ui/typedefs';
 
 @Component({
@@ -21,4 +22,5 @@ export class HomepageComponent {
   SplitColumnsNumber = SplitColumnsNumber;
   SplitColumnsPosition = SplitColumnsPosition;
   SplitColumnsSize = SplitColumnsSize;
+  AlertType = AlertType;
 }

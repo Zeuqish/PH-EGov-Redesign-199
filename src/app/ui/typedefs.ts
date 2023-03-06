@@ -106,3 +106,10 @@ export enum lineThickness {
   MID = 4,
   BOLD = 8,
 }
+
+export enum AlertType {
+  SUCCESS = "success",
+  INFO = "info",
+  ALERT = "alert",
+  ERROR = "error",
+}

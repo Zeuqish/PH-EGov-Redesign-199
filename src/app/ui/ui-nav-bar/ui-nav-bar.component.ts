@@ -16,7 +16,7 @@ import { TextSize, FontWeight } from '../typedefs';
   `,
   styleUrls: ['./ui-nav-bar.component.scss'],
 })
-export class UINavBar {
+export class UINavBarComponent {
 
   constructor() { }
 

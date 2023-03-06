@@ -1,3 +1,12 @@
+<ui-alert [type]="AlertType.SUCCESS">
+  <span slot="start">Changes has been saved successfully!</span></ui-alert>
+
+<ui-alert [type]="AlertType.INFO"><span slot="info">You have 3 new messages in your inbox.</span></ui-alert>
+
+<ui-alert [type]="AlertType.ALERT"><span slot="alert">Don't forget to save your data.</span></ui-alert>
+
+<ui-alert [type]="AlertType.ERROR"><span slot="error">The server is not responding, try again later.</span></ui-alert>
+
 <ui-nav-bar></ui-nav-bar>
 <ui-form></ui-form>
 
