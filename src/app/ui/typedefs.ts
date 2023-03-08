@@ -106,3 +106,12 @@ export enum lineThickness {
   MID = 4,
   BOLD = 8,
 }
+
+export enum IconSize {
+  SMALL = 8,
+  MID = 16,
+  LARGE = 24,
+  XLARGE = 32,
+  XXLARGE = 48,
+  XXXLARGE = 64,
+}
