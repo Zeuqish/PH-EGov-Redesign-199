@@ -107,6 +107,20 @@ export enum lineThickness {
   BOLD = 8,
 }
 
+export enum AlertType {
+  SUCCESS = 'success',
+  INFO = 'info',
+  ALERT = 'alert',
+  ERROR = 'error',
+}
+
+export enum TooltipPosition {
+  TOP = 'top',
+  BOTTOM = 'bottom',
+  RIGHT = 'right',
+  LEFT = 'left',
+}
+
 export enum IconSize {
   SMALL = 8,
   MID = 16,
