@@ -18,6 +18,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { UILinkComponent } from './ui-link/ui-link.component';
 import { UIHrComponent } from './ui-hr/ui-hr.component';
+import { UIIconComponent } from './ui-icon/ui-icon.component';
 
 @NgModule({
   imports: [CommonModule, BrowserModule],
@@ -38,6 +39,7 @@ import { UIHrComponent } from './ui-hr/ui-hr.component';
     UIProgressBarComponent,
     UIFormComponent,
     UIHrComponent,
+    UIIconComponent,
   ],
   exports: [
     UIBlockComponent,
@@ -56,6 +58,7 @@ import { UIHrComponent } from './ui-hr/ui-hr.component';
     UIProgressBarComponent,
     UIFormComponent,
     UIHrComponent,
+    UIIconComponent,
   ],
 })
 export class UIModule {}
