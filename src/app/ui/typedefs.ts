@@ -113,3 +113,10 @@ export enum AlertType {
   ALERT = "alert",
   ERROR = "error",
 }
+
+export enum TooltipPosition {
+  TOP = "top",
+  BOTTOM = "bottom",
+  RIGHT = "right",
+  LEFT = "left",
+}

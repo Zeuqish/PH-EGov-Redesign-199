@@ -14,6 +14,7 @@ import { UIProgressBarComponent } from './ui-progress-bar/ui-progress-bar.compon
 import { UIFormComponent } from './ui-form/ui-form.component';
 import { UINavBarComponent } from './ui-nav-bar/ui-nav-bar.component';
 import { UIAlertComponent } from './ui-alert/ui-alert.component';
+import { UITooltipComponent } from './ui-tooltip/ui-tooltip.component';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -42,6 +43,7 @@ import { UIHrComponent } from './ui-hr/ui-hr.component';
     UIHrComponent,
     UINavBarComponent,
     UIAlertComponent,
+    UITooltipComponent,
   ],
   exports: [
     UIBlockComponent,
@@ -62,6 +64,7 @@ import { UIHrComponent } from './ui-hr/ui-hr.component';
     UIHrComponent,
     UINavBarComponent,
     UIAlertComponent,
+    UITooltipComponent,
   ],
 })
 export class UIModule {}
