@@ -9,6 +9,10 @@ import {
   selector: 'block-article',
   template: `
     <ui-block class="center-content">
+      <ui-container [paddingBottom]="PaddingSize.LARGE">
+        <ui-heading> Latest Articles </ui-heading>
+      </ui-container>
+
       <ui-columns>
         <ui-container *ngFor="let elem of [1, 2, 3, 4, 5]">
           <element-card
@@ -30,4 +34,5 @@ export class BlockArticleComponent {
   HeadingSize = HeadingSize;
   ImageShape = ImageShape;
   SplitColumnsSize = SplitColumnsSize;
+  PaddingSize = PaddingSize;
 }
