@@ -1,171 +1,82 @@
-<ui-block>
-    <p>Hello World!</p>
-    <button>Hello Button</button>
-</ui-block>
+<block-header  >
 
-<ui-container [paddingLeft]="PaddingSize.XXLARGE" [paddingRight]="PaddingSize.XXLARGE">
+</block-header>
+
+<block-banner [backgroundImgSrc]="'./assets/rect_horiz.jpg'">
   <ui-heading>
-    Equal-split Columns
+    Welcome to the Province of Banner Block!
   </ui-heading>
-  <ui-columns>
-    <div>
-        <ui-container [padding]="[PaddingSize.XSMALL,PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
-            <ui-heading [headingSize]="HeadingSize.HEADING_TWO">
-                Lorem Ipsum
-            </ui-heading>
-        </ui-container>
-        <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
-            <ui-text [fontWeight]="FontWeight.REGULAR">
-                Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
-                egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
-                eu blandit. Duis laoreet neque turpis. Aliquam dui mauris, pretium vel
-                dignissim et, porttitor at mauris. Quisque imperdiet, neque feugiat
-                ornare viverra, mauris elit cursus urna, at porttitor ipsum velit ut
-                felis. Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Integer ultrices velit id magna mollis, nec
-                rhoncus mauris lacinia. Quisque fermentum cursus rutrum. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Aenean varius placerat lorem, ut placerat erat consectetur eget.
-                Praesent blandit elit nec augue egestas dictum. Donec varius hendrerit
-                erat, ut placerat libero ultricies ac. Maecenas blandit tortor lorem,
-                sit amet pulvinar massa euismod vel.
-              </ui-text>
-        </ui-container>
-    </div>
-    <div>
-        <ui-container [padding]="[PaddingSize.XSMALL,PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
-            <ui-heading [headingSize]="HeadingSize.HEADING_TWO">
-                Header 2
-            </ui-heading>
-        </ui-container>
-        <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
-            <ui-text [fontWeight]="FontWeight.REGULAR">
-                Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
-                egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
-                eu blandit. Duis laoreet neque turpis. Aliquam dui mauris, pretium vel
-                dignissim et, porttitor at mauris. Quisque imperdiet, neque feugiat
-                ornare viverra, mauris elit cursus urna, at porttitor ipsum velit ut
-                felis. Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Integer ultrices velit id magna mollis, nec
-                rhoncus mauris lacinia. Quisque fermentum cursus rutrum. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Aenean varius placerat lorem, ut placerat erat consectetur eget.
-                Praesent blandit elit nec augue egestas dictum. Donec varius hendrerit
-                erat, ut placerat libero ultricies ac. Maecenas blandit tortor lorem,
-                sit amet pulvinar massa euismod vel.
-              </ui-text>
-        </ui-container>
-    </div>
-  </ui-columns>
-</ui-container>
-
-
-  <ui-container [paddingLeft]="PaddingSize.XXLARGE" [paddingRight]="PaddingSize.XXLARGE">
-    <ui-heading>
-        Two-split Column
-    </ui-heading>
-    <ui-columns-split-type [split]="SplitColumnsPosition.LEFT" [splitSize]="SplitColumnsSize.LARGE">
-        <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
-            <ui-text [fontWeight]="FontWeight.REGULAR">
-                Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
-                egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
-                eu blandit. Duis laoreet neque turpis. Aliquam dui mauris, pretium vel
-                dignissim et, porttitor at mauris. Quisque imperdiet, neque feugiat
-                ornare viverra, mauris elit cursus urna, at porttitor ipsum velit ut
-                felis. Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Integer ultrices velit id magna mollis, nec
-                rhoncus mauris lacinia. Quisque fermentum cursus rutrum. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Aenean varius placerat lorem, ut placerat erat consectetur eget.
-                Praesent blandit elit nec augue egestas dictum. Donec varius hendrerit
-                erat, ut placerat libero ultricies ac. Maecenas blandit tortor lorem,
-                sit amet pulvinar massa euismod vel.
-              </ui-text>
-        </ui-container>
-        <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
-            <ui-text [fontWeight]="FontWeight.REGULAR">
-                Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
-                egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
-                eu blandit. Duis laoreet neque turpis. Aliquam dui mauris, pretium vel
-                dignissim et, porttitor at mauris. Quisque imperdiet, neque feugiat
-                ornare viverra, mauris elit cursus urna, at porttitor ipsum velit ut
-                felis. Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Integer ultrices velit id magna mollis, nec
-                rhoncus mauris lacinia. Quisque fermentum cursus rutrum. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Aenean varius placerat lorem, ut placerat erat consectetur eget.
-                Praesent blandit elit nec augue egestas dictum. Donec varius hendrerit
-                erat, ut placerat libero ultricies ac. Maecenas blandit tortor lorem,
-                sit amet pulvinar massa euismod vel.
-              </ui-text>
-        </ui-container>
-      </ui-columns-split-type>
+  <ui-button>
+    Call to Action
+  </ui-button>
+  <ui-container table-of-contents>
+    <ul>
+      <li>
+        <ui-link [url]="'#block2'">
+          Section A
+        </ui-link>  
+      </li>
+      <li>
+        <ui-link [url]="'#block2'">
+        Section B
+        </ui-link> 
+      </li>
+    </ul>
   </ui-container>
+</block-banner>
 
-  <ui-container [paddingLeft]="PaddingSize.XXLARGE" [paddingRight]="PaddingSize.XXLARGE">
-    <ui-heading>
-        Three-split Column
-    </ui-heading>
-    <ui-columns-three-split-type [splitSize]="SplitColumnsSize.LARGE">
-        <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
-            <ui-text [fontWeight]="FontWeight.REGULAR">
-                Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
-                egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
-                eu blandit. Duis laoreet neque turpis. Aliquam dui mauris, pretium vel
-                dignissim et, porttitor at mauris. Quisque imperdiet, neque feugiat
-                ornare viverra, mauris elit cursus urna, at porttitor ipsum velit ut
-                felis. Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Integer ultrices velit id magna mollis, nec
-                rhoncus mauris lacinia. Quisque fermentum cursus rutrum. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Aenean varius placerat lorem, ut placerat erat consectetur eget.
-                Praesent blandit elit nec augue egestas dictum. Donec varius hendrerit
-                erat, ut placerat libero ultricies ac. Maecenas blandit tortor lorem,
-                sit amet pulvinar massa euismod vel.
-              </ui-text>
-        </ui-container>
-        <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
-            <ui-text [fontWeight]="FontWeight.REGULAR">
-                Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
-                egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
-                eu blandit. Duis laoreet neque turpis. Aliquam dui mauris, pretium vel
-                dignissim et, porttitor at mauris. Quisque imperdiet, neque feugiat
-                ornare viverra, mauris elit cursus urna, at porttitor ipsum velit ut
-                felis. Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Integer ultrices velit id magna mollis, nec
-                rhoncus mauris lacinia. Quisque fermentum cursus rutrum. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Aenean varius placerat lorem, ut placerat erat consectetur eget.
-                Praesent blandit elit nec augue egestas dictum. Donec varius hendrerit
-                erat, ut placerat libero ultricies ac. Maecenas blandit tortor lorem,
-                sit amet pulvinar massa euismod vel.
-              </ui-text>
-        </ui-container>
-        <ui-container [padding]="[PaddingSize.XSMALL, PaddingSize.XSMALL, PaddingSize.MID, PaddingSize.MID]">
-            <ui-text [fontWeight]="FontWeight.REGULAR">
-                Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
-                egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
-                eu blandit. Duis laoreet neque turpis. Aliquam dui mauris, pretium vel
-                dignissim et, porttitor at mauris. Quisque imperdiet, neque feugiat
-                ornare viverra, mauris elit cursus urna, at porttitor ipsum velit ut
-                felis. Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Integer ultrices velit id magna mollis, nec
-                rhoncus mauris lacinia. Quisque fermentum cursus rutrum. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Aenean varius placerat lorem, ut placerat erat consectetur eget.
-                Praesent blandit elit nec augue egestas dictum. Donec varius hendrerit
-                erat, ut placerat libero ultricies ac. Maecenas blandit tortor lorem,
-                sit amet pulvinar massa euismod vel.
-              </ui-text>
-        </ui-container>
-      </ui-columns-three-split-type>
+<block-text [splitType]="SplitColumnsPosition.LEFT">
+  <ui-heading [headingSize]="HeadingSize.HEADING_FOUR">
+    Using Text Block
+  </ui-heading>  
+  <ui-text>
+    The text block automatically puts in a header when a ui-header element is detected. 
+    Text is automatically put in the larger container when the split option is used. 
+    For putting content in the smaller container, add the words "left" or "right" on the element;
+    for example, &lt;ui-container left&gt; when the split option is left will make the block place the container on the left, 
+    but if the split option is on the right, the ui-container will not render.
+  </ui-text>
+
+  <ui-container left>
+    <element-table-of-contents>
+        <ul>
+          <li>
+            <ui-link [url]="'#block2'">
+              Section A
+            </ui-link>  
+          </li>
+          <li>
+            <ui-link [url]="'#block2'">
+            Section B
+            </ui-link> 
+          </li>
+        </ul>
+    </element-table-of-contents>
   </ui-container>
+</block-text>
 
-  <ui-page-layout> </ui-page-layout>
+
+<block-article>
+  
+</block-article>
+
+<block-service-list>
+
+</block-service-list>
+
+<block-officials-multiple>
+  
+</block-officials-multiple>
+
+<block-officials-single [imgSrc]="'./assets/square.jpg'">
+  <ui-heading [headingSize]="HeadingSize.HEADING_FIVE">
+  Jose Rizal
+  </ui-heading>
+  <ui-text>
+    President of Government Position Deparment
+  </ui-text>
+</block-officials-single>
+
+<block-footer [imageSrc]="'./assets/square.jpg'">
+
+</block-footer>
