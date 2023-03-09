@@ -15,6 +15,7 @@ import { UIFormComponent } from './ui-form/ui-form.component';
 import { UINavBarComponent } from './ui-nav-bar/ui-nav-bar.component';
 import { UIAlertComponent } from './ui-alert/ui-alert.component';
 import { UITooltipComponent } from './ui-tooltip/ui-tooltip.component';
+import { UIIframeComponent } from './ui-iframe/ui-iframe.component';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -46,6 +47,7 @@ import { UIIconComponent } from './ui-icon/ui-icon.component';
     UIAlertComponent,
     UITooltipComponent,
     UIIconComponent,
+    UIIframeComponent,
   ],
   exports: [
     UIBlockComponent,
@@ -68,6 +70,7 @@ import { UIIconComponent } from './ui-icon/ui-icon.component';
     UIAlertComponent,
     UITooltipComponent,
     UIIconComponent,
+    UIIframeComponent,
   ],
 })
 export class UIModule {}
