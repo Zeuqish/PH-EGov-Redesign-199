@@ -129,3 +129,8 @@ export enum IconSize {
   XXLARGE = 48,
   XXXLARGE = 64,
 }
+
+export enum CardSmallBorderSize {
+  FIT = 'fit-content',
+  MAX = 'max-width',
+}
