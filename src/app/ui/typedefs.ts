@@ -37,6 +37,8 @@ export enum FontWeight {
 
 export enum PaddingSize {
   NONE = 0,
+  XXXSMALL = 4,
+  XXSMALL = 8,
   XSMALL = 12,
   SMALL = 16,
   MID = 24,
