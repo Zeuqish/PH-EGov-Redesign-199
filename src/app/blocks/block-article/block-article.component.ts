@@ -8,12 +8,13 @@ import {
 @Component({
   selector: 'block-article',
   template: `
-    <ui-block class="center-content">
-      <ui-container [paddingBottom]="PaddingSize.LARGE">
-        <ui-heading> Latest Articles </ui-heading>
-      </ui-container>
-
-      <ui-columns>
+    <ui-block>
+      <ui-columns class="center-content">
+        <ui-container [paddingBottom]="PaddingSize.LARGE">
+          <ui-heading> Latest Articles </ui-heading>
+        </ui-container>
+      </ui-columns>
+      <ui-columns class="center-content">
         <ui-container *ngFor="let elem of [1, 2, 3, 4, 5]">
           <element-card
             [imageSrc]="'./assets/square.jpg'"

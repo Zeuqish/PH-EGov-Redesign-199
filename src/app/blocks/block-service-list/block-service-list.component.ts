@@ -9,9 +9,11 @@ import {
   selector: 'block-service-list',
   template: `
     <ui-block>
-      <ui-container [paddingBottom]="PaddingSize.LARGE">
-        <ui-heading> Latest Articles </ui-heading>
-      </ui-container>
+      <ui-columns style="center-content">
+        <ui-container [paddingBottom]="PaddingSize.LARGE">
+          <ui-heading> Our Services </ui-heading>
+        </ui-container>
+      </ui-columns>
 
       <ui-columns style="center-content">
         <ui-container *ngFor="let service of services">
