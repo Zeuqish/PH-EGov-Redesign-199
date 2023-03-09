@@ -8,6 +8,8 @@ import { ElementsModule } from '../elements/elements.module';
 import { BlockHeaderComponent } from './block-header/block-header.component';
 import { BlockArticleComponent } from './block-article/block-article.component';
 import { BlockServiceListComponent } from './block-service-list/block-service-list.component';
+import { BlockOfficialsMultComponent } from './block-officials-multiple/block-officials-multiple.component';
+import { BlockOfficialsSingleComponent } from './block-officials-single/block-officials-single.component';
 
 @NgModule({
   imports: [CommonModule, BrowserModule, UIModule, ElementsModule],
@@ -17,6 +19,8 @@ import { BlockServiceListComponent } from './block-service-list/block-service-li
     BlockHeaderComponent,
     BlockArticleComponent,
     BlockServiceListComponent,
+    BlockOfficialsMultComponent,
+    BlockOfficialsSingleComponent,
   ],
   exports: [
     BlockTextComponent,
@@ -24,6 +28,8 @@ import { BlockServiceListComponent } from './block-service-list/block-service-li
     BlockHeaderComponent,
     BlockArticleComponent,
     BlockServiceListComponent,
+    BlockOfficialsMultComponent,
+    BlockOfficialsSingleComponent,
   ],
 })
 export class BlockModule {}
