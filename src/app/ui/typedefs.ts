@@ -37,6 +37,8 @@ export enum FontWeight {
 
 export enum PaddingSize {
   NONE = 0,
+  XXXSMALL = 4,
+  XXSMALL = 8,
   XSMALL = 12,
   SMALL = 16,
   MID = 24,
@@ -128,4 +130,9 @@ export enum IconSize {
   XLARGE = 32,
   XXLARGE = 48,
   XXXLARGE = 64,
+}
+
+export enum CardSmallBorderSize {
+  FIT = 'fit-content',
+  MAX = 'max-width',
 }
