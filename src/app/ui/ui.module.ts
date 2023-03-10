@@ -17,6 +17,7 @@ import { UIAlertComponent } from './ui-alert/ui-alert.component';
 import { UITooltipComponent } from './ui-tooltip/ui-tooltip.component';
 import { UIIframeComponent } from './ui-iframe/ui-iframe.component';
 import { UIHighlightComponent } from './ui-highlight/ui-highlight.component';
+import { UIClockComponent } from './ui-clock/ui-clock.component';
 
 
 import { NgModule } from '@angular/core';
@@ -51,6 +52,7 @@ import { UIIconComponent } from './ui-icon/ui-icon.component';
     UIIconComponent,
     UIIframeComponent,
     UIHighlightComponent,
+    UIClockComponent,
   ],
   exports: [
     UIBlockComponent,
@@ -75,6 +77,7 @@ import { UIIconComponent } from './ui-icon/ui-icon.component';
     UIIconComponent,
     UIIframeComponent,
     UIHighlightComponent,
+    UIClockComponent,
   ],
 })
 export class UIModule {}
