@@ -16,7 +16,7 @@ export class UIIframeComponent {
 
   safeSrc: SafeResourceUrl;
   constructor(private sanitizer: DomSanitizer) {
-    this.safeSrc = this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl(this.embedLink);
+    this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl(this.embedLink);
   }
 
   ngOnInit() {
