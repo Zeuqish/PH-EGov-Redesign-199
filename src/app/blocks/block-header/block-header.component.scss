@@ -1,7 +1,42 @@
-.header-text {
-    letter-spacing: 4px;
-}
+@use 'src/styles.scss' as *;
 
 .center-content{
-    justify-content: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-style: normal;
 }
+
+.header-text {
+    letter-spacing: 4px;
+    font-weight: 700;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    float: left;
+    line-height: 5em;
+    @include responsive($breakpoint-xl){
+      line-height: normal;
+      font-size: 20px;
+      letter-spacing: 0.42em;
+    }
+
+}
+
+.sub-text{
+  font-weight: 400;
+  font-size: 5px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.4em;
+  float: left;
+
+  color: #000000;
+  @include responsive($breakpoint-l){
+    font-size: 12px;
+  }
+}
+
+

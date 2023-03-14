@@ -1,0 +1,15 @@
+@use 'src/styles.scss' as *;
+
+hr{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @include responsive($breakpoint-xxl){
+    float:left;
+    width: 95%;
+  }
+  @include responsive($breakpoint-xxxl){
+    float:left;
+    width: 90%;
+  }
+}
