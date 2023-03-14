@@ -11,6 +11,7 @@ import { BlockServiceListComponent } from './block-service-list/block-service-li
 import { BlockOfficialsMultComponent } from './block-officials-multiple/block-officials-multiple.component';
 import { BlockOfficialsSingleComponent } from './block-officials-single/block-officials-single.component';
 import { BlockFooterComponent } from './block-footer/block-footer.component';
+import { BlockNavbarComponent } from './block-navbar/block-navbar.component';
 
 @NgModule({
   imports: [CommonModule, BrowserModule, UIModule, ElementsModule],
@@ -23,6 +24,7 @@ import { BlockFooterComponent } from './block-footer/block-footer.component';
     BlockOfficialsMultComponent,
     BlockOfficialsSingleComponent,
     BlockFooterComponent,
+    BlockNavbarComponent,
   ],
   exports: [
     BlockTextComponent,
@@ -33,6 +35,7 @@ import { BlockFooterComponent } from './block-footer/block-footer.component';
     BlockOfficialsMultComponent,
     BlockOfficialsSingleComponent,
     BlockFooterComponent,
+    BlockNavbarComponent,
   ],
 })
 export class BlockModule {}
