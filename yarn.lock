@@ -1226,6 +1226,14 @@
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
+"@coreui/angular@^4.3.16":
+  version "4.3.16"
+  resolved "https://registry.yarnpkg.com/@coreui/angular/-/angular-4.3.16.tgz#c2b9c50050b269c11291b496362f82287e78dbba"
+  integrity sha512-G1fi+rxSPukg/eixvzIThBjy6MCThC1S/BIIStHR/Fhsvw/QzYQhxXM0adG+6Hb3AJIXq31BfA+rpWVoxRU5tA==
+  dependencies:
+    "@popperjs/core" "~2.11.6"
+    tslib "^2.3.0"
+
 "@csstools/postcss-cascade-layers@^1.0.5":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@csstools/postcss-cascade-layers/-/postcss-cascade-layers-1.1.1.tgz#8a997edf97d34071dd2e37ea6022447dd9e795ad"
@@ -1503,6 +1511,11 @@
     node-gyp "^9.0.0"
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
+
+"@popperjs/core@~2.11.6":
+  version "2.11.6"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
+  integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
 
 "@schematics/angular@14.1.3":
   version "14.1.3"

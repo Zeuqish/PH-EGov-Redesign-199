@@ -8,7 +8,7 @@ import {
 @Component({
   selector: 'block-officials-single',
   template: `
-    <ui-block [colStart]="4" [colEnd]="10">
+    <ui-block [colStart]="3" [colEnd]="11">
       <ui-columns style="center-content">
         <ui-container [paddingBottom]="PaddingSize.LARGE">
           <ui-heading> Your Officials </ui-heading>
