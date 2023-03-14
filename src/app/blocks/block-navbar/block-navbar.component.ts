@@ -15,8 +15,6 @@ import {
   styleUrls: ['./block-navbar.component.scss'],
 })
 export class BlockNavbarComponent {
-  @Input() imgSrc: string = '';
-
   HeadingSize = HeadingSize;
   ImageShape = ImageShape;
   PaddingSize = PaddingSize;
