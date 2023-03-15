@@ -1,40 +1,106 @@
+@use 'src/styles.scss' as *;
+
 .nav-bar{
-  padding: 1em 2em 1em 2em;
+  padding: .5em 1em .5em 1em;
   margin-bottom: 2em;
+  @include responsive($breakpoint-xl){
+    padding: 1em 2em 1em 2em;
+  }
 }
+
 ul {
-  list-style-type: none;
+  list-style-type: block;
   margin: 0;
   padding: 0;
   background-color: white;
   text-align: center;
+  @include responsive($breakpoint-xxl){
+    list-style-type: none;
+  }
+
+}
+
+input[type=checkbox]{
+  display: none;
+}
+@media (max-width: 980px) {
+  input[type=checkbox]:checked ~ .menu{
+    display: block;
+  }
+
+
+}
+/*HAMBURGER MENU*/
+
+.hamburger {
+  display: block;
+  font-size: 24px;
+  user-select: none;
+  @include responsive($breakpoint-m){
+    display: none;
+  }
+}
+
+.toggle{
+  outline-style: solid;
+  outline-color: #666;
+  @include responsive($breakpoint-m){
+    outline: none;
+  }
+}
+
+.menu li{
+  top: -3em;
+  display: flex;
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #666;
+  @include responsive($breakpoint-m){
+    display: inline;
+    background-color: white;
+  }
+  @include responsive($breakpoint-xl){
+    padding: 1em 1.5em 1em 1.5em;
+  }
+  @include responsive($breakpoint-xxl){
+    padding: 1em 3em 1em 3em;
+  }
 }
 
 
-li{
-  display: inline;
-  padding: 1em 3em 1em 3em;
+.menu{
+  display: none;
+  @include responsive($breakpoint-m){
+    display: block;
+  }
 }
-
 
 li a {
-  color: #666;
+  color:white;
   font-family: 'Inter', sans-serif;
   line-height: 1.4;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
+  width: 100%;
+
+  @include responsive($breakpoint-m){
+    color: #666;
+  }
+  @include responsive($breakpoint-xxl){
+    font-size: 14px;
+    width: 100%;
+  }
 }
 
-li a:active {
-  color: black;
-  text-decoration:underline
+.menu li a:active {
+  color: #000;
+  font-weight: bold;
 }
 
 
-li a:hover {
-  color: black;
-  text-decoration:underline
-
+.menu li a:hover {
+  color: #f2950b;
+  transition: 0.1s ease;
+  border-radius: 5px;
 }
 // /* Large */
 // @media screen and (max-width: 1280px){}
@@ -50,26 +116,4 @@ li a:hover {
 }
 
 
-// /* Small */
 
-@media screen and (max-width: 736px){
-  .nav-bar{
-    padding: 0,5em 0em 0.5em 0em;
-    margin-bottom: 2em;
-    min-inline-size: 5em;
-  }
-
-  li{
-    display: b;
-    padding: 0.5em 0.5em 0.5em 0.5em;
-  }
-
-  li a {
-    color: #666;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.4;
-    text-decoration: none;
-    font-size: 12px;
-  }
-
-}
