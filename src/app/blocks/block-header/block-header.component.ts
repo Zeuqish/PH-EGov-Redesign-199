@@ -15,7 +15,7 @@ import {
           </ui-image>
         </div>
         <ui-container>
-          <ui-heading class="header-text">{{ this.headingContent }}</ui-heading>
+          <ui-heading [headingSize]="30" class="header-text">{{ this.headingContent }}</ui-heading>
           <ui-hr></ui-hr>
           <ui-text class="sub-text">
             The Official Website of the {{ this.textContent }}
