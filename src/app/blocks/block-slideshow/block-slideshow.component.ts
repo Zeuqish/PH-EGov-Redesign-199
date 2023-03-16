@@ -42,7 +42,6 @@ import {
             <ui-text class="carousel-caption">{{ slide.caption }} </ui-text>
           </ui-container>
         </ui-container>
-        <ui-hr> </ui-hr>
       </ui-container>
     </ui-block>
   `,
