@@ -40,6 +40,7 @@ import {
                   <ui-icon
                     [iconSize]="IconSize.XLARGE"
                     [iconSrc]="data[1]"
+                    style="padding-right: 4px;"
                   ></ui-icon>
                 </a>
               </ui-container>
@@ -75,9 +76,8 @@ export class BlockFooterComponent {
   SplitColumnsPosition = SplitColumnsPosition;
 
   socialMedia = [
-    ['www.facebook.com', './assets/icon1.svg'],
-    ['www.google.com', './assets/icon1.svg'],
-    ['www.youtube.com', './assets/icon1.svg'],
-    ['www.instagram.com', './assets/icon1.svg'],
+    ['https://facebook.com/rizalprovincialgov', './assets/facebook_icon.png'],
+    ['https://twitter.com/RizalGov', './assets/twitter_icon.png'],
+    ['mailto:provinceofrizal@yahoo.com', './assets/email_icon.svg'],
   ];
 }

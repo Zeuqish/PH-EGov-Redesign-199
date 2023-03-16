@@ -17,6 +17,8 @@ $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 $breakpoint-xxxl: 1500px;
 
+$orange: #f2950b;
+
 // Responsible for column creation
 @mixin columns($count, $width) {
     -webkit-column-count: $count;
