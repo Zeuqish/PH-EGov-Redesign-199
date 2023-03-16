@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { lineThickness } from 'src/app/ui/typedefs';
+import { LineColor, lineThickness } from 'src/app/ui/typedefs';
 @Component({
   selector: 'ui-hr',
   template: `<hr [style]="getLineStyle()" />`,
@@ -7,8 +7,9 @@ import { lineThickness } from 'src/app/ui/typedefs';
 })
 export class UIHrComponent {
   @Input() lineThickness: lineThickness = lineThickness.LIGHT;
+  @Input() lineColor: LineColor = LineColor.BLACK;
 
   getLineStyle() {
-    return `border : ${this.lineThickness}px solid black;`;
+    return `border : ${this.lineThickness}px solid ${this.lineColor};`;
   }
 }

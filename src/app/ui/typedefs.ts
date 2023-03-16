@@ -109,6 +109,12 @@ export enum lineThickness {
   BOLD = 8,
 }
 
+export enum LineColor {
+  BLACK = 'black',
+  GRAY = 'gray',
+  LIGHT_GRAY = 'lightgray',
+}
+
 export enum AlertType {
   SUCCESS = 'success',
   INFO = 'info',
