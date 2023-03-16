@@ -11,8 +11,5 @@ import { NgIf } from '@angular/common';
   styleUrls: ['./ui-columns.component.scss'],
 })
 export class UIColumnsComponent implements OnInit {
-  @Input() colsSmall: number = 1;
-  @Input() colsMedium: number = 2;
-  @Input() colsLarge: number = 3;
   ngOnInit() {}
 }
