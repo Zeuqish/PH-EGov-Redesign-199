@@ -1,9 +1,8 @@
 @use 'src/styles.scss' as *;
 
-.center-content{
-  justify-content: center;
-  font-family: 'Inter';
-  font-style: normal;
+.center-container {
+  display: grid;
+  align-content: center;
 }
 
 .header-text {
