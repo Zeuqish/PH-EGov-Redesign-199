@@ -1,52 +1,62 @@
-import {
-  AfterContentInit,
-  AfterViewInit,
-  Component,
-  Input,
-  OnInit,
-} from '@angular/core';
+import { AfterViewInit, Component, Input } from '@angular/core';
 import {
   HeadingSize,
   PaddingSize,
   ImageShape,
   SplitColumnsSize,
+  TextSize,
 } from 'src/app/ui/typedefs';
 @Component({
   selector: 'block-slideshow',
   template: `
     <ui-block [optionalGrid]="true">
-      <ui-columns class="slideshow-container">
-        <ui-container>
+      <ui-container class="carousel-container">
+        <div class="carousel-border">
           <ui-container
-            class="slide fade no-display"
             *ngFor="let slide of slides; index as i"
+            class="carousel-content-container no-display"
           >
-            <ui-text class="slide-number">
-              {{ i + 1 }}/{{ slides.length }}
+            <!--BAD DESIGN, MUST FIX WITH A PROPER UI-CONTAINER -->
+            <ui-container [paddingTop]="PaddingSize.LARGE">
+              <div class="carousel-content fade">
+                <a class="prev" (click)="this.slideControls(-1)"> &#10094; </a>
+                <ui-image
+                  class="carousel-image carousel-border"
+                  [imageSrc]="slide.src"
+                ></ui-image>
+                <a class="next" (click)="this.slideControls(1)"> &#10095; </a>
+              </div>
+            </ui-container>
+            <ui-text [textSize]="TextSize.XSMALL" class="center-text">
+              {{ i + 1 }} of {{ slides.length }}
             </ui-text>
-            <ui-text class="slide-title">{{ slide.title }}</ui-text>
-            <ui-image
-              optional
-              class="slide-image"
-              [imageSrc]="slide.src"
-            ></ui-image>
-            <ui-text class="slide-caption">{{ slide.caption }}</ui-text>
-
-            <a class="prev" (click)="this.slideControls(-1)">&#10094;</a>
-            <a class="next" (click)="this.slideControls(1)">&#10095;</a>
+            <ui-container
+              [paddingTop]="PaddingSize.SMALL"
+              [paddingLeft]="PaddingSize.XXLARGE"
+              [paddingBottom]="PaddingSize.LARGE"
+            >
+              <ui-heading
+                class="carousel-title"
+                [headingSize]="HeadingSize.HEADING_FIVE"
+                >{{ slide.title }}
+              </ui-heading>
+              <ui-text class="carousel-caption">{{ slide.caption }} </ui-text>
+            </ui-container>
           </ui-container>
-        </ui-container>
-      </ui-columns>
+        </div>
+      </ui-container>
     </ui-block>
   `,
   styleUrls: ['./block-slideshow.component.scss'],
 })
 export class BlockSlideshowComponent implements AfterViewInit {
+  @Input() slideData: string[] = [];
   HeadingSize = HeadingSize;
   ImageShape = ImageShape;
   PaddingSize = PaddingSize;
   SplitColumnsSize = SplitColumnsSize;
-
+  TextSize = TextSize;
+  //<ui-image class="slide-image" [imageSrc]="slide.src"></ui-image>
   slides = [
     { title: 'Cat 1', caption: 'Caption 1', src: './assets/slideshow1.jpg' },
     { title: 'Cat 2', caption: 'Caption 2', src: './assets/slideshow2.jpg' },
@@ -63,7 +73,9 @@ export class BlockSlideshowComponent implements AfterViewInit {
   slideIndex: number = 0;
 
   showSlides(num: number): boolean {
-    let getSlides = document.getElementsByClassName('slide');
+    let getSlides = document.getElementsByClassName(
+      'carousel-content-container'
+    );
     console.log(getSlides);
     if (this.slideIndex >= this.slides.length) {
       this.slideIndex = 0;
@@ -73,17 +85,16 @@ export class BlockSlideshowComponent implements AfterViewInit {
 
     for (let i = 0; i < getSlides.length; i++) {
       getSlides[i].classList.add('no-display');
-      getSlides[i].classList.remove('display-slide');
+      getSlides[i].classList.remove('active');
     }
-    return getSlides[this.slideIndex].classList.replace(
-      'no-display',
-      'display-slide'
-    );
+
+    return getSlides[this.slideIndex].classList.replace('no-display', 'active');
   }
 
   ngAfterViewInit(): void {
-    let getSlides = document.getElementsByClassName('slide');
-    console.log(getSlides);
-    getSlides[0].classList.replace('no-display', 'display-slide');
+    let getSlides = document.getElementsByClassName(
+      'carousel-content-container'
+    );
+    getSlides[0].classList.replace('no-display', 'active');
   }
 }
