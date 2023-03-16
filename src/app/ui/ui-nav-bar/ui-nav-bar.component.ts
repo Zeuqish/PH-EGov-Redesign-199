@@ -27,7 +27,10 @@ export class UINavBarComponent {
   constructor() { }
   navbarOpen = false;
 
-  isShowDivIf = true;
+  ngOnInit(): void {
+    this.navbarOpen = false;
+  }
+
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
