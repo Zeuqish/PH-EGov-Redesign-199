@@ -103,6 +103,14 @@ li a {
   a {
     color: white;
   }
+  @include responsive($breakpoint-m){
+    outline: none;
+    background-color:white;
+    a {
+      color:#f2950b;
+      font-weight: 600;
+    }
+  }
 }
 
 
