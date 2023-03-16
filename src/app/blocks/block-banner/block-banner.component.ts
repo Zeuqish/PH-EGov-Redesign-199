@@ -13,8 +13,8 @@ import {
       [colStart]="4"
       [colEnd]="10"
       [optionalGrid]="true"
-      [optionalColStart]="3"
-      [optionalColEnd]="11"
+      [optionalColStart]="1"
+      [optionalColEnd]="13"
     >
       <ui-image optional [imageSrc]="this.backgroundImgSrc" style="z-index:-1;">
       </ui-image>
