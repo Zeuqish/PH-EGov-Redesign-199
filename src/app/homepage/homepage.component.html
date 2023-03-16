@@ -4,9 +4,10 @@
 <block-navbar>
   
 </block-navbar>
+
 <block-banner [backgroundImgSrc]="'./assets/rect_horiz.jpg'">
   <ui-heading>
-    Welcome to the Province of Banner Block!
+    Welcome to the Province of Rizal
   </ui-heading>
   <ui-button>
     Call to Action
@@ -14,22 +15,18 @@
   <ui-container table-of-contents>
     <ul>
       <li>
-        <ui-link [url]="'#block2'">
-          Section A
+        <ui-link [url]="'#news'">
+          Latest News
         </ui-link>  
       </li>
       <li>
-        <ui-link [url]="'#block2'">
-        Section B
+        <ui-link [url]="'#services'">
+        Services
         </ui-link> 
       </li>
     </ul>
   </ui-container>
 </block-banner>
-
-<block-slideshow>
-  
-</block-slideshow>
 
 <block-text [splitType]="SplitColumnsPosition.LEFT">
   <ui-heading [headingSize]="HeadingSize.HEADING_FOUR">
@@ -62,11 +59,11 @@
 </block-text>
 
 
-<block-article>
+<block-article id="news">
   
 </block-article>
 
-<block-service-list>
+<block-service-list id="services">
 
 </block-service-list>
 
