@@ -9,41 +9,40 @@ import {
 @Component({
   selector: 'block-slideshow',
   template: `
-    <ui-block [optionalGrid]="true">
+    <ui-block [optionalGrid]="true" [colStart]="3" [colEnd]="11">
       <ui-container class="carousel-container">
-        <div class="carousel-border">
-          <ui-container
-            *ngFor="let slide of slides; index as i"
-            class="carousel-content-container no-display"
-          >
-            <!--BAD DESIGN, MUST FIX WITH A PROPER UI-CONTAINER -->
-            <ui-container [paddingTop]="PaddingSize.LARGE">
-              <div class="carousel-content fade">
-                <a class="prev" (click)="this.slideControls(-1)"> &#10094; </a>
-                <ui-image
-                  class="carousel-image carousel-border"
-                  [imageSrc]="slide.src"
-                ></ui-image>
-                <a class="next" (click)="this.slideControls(1)"> &#10095; </a>
-              </div>
-            </ui-container>
-            <ui-text [textSize]="TextSize.XSMALL" class="center-text">
-              {{ i + 1 }} of {{ slides.length }}
-            </ui-text>
-            <ui-container
-              [paddingTop]="PaddingSize.SMALL"
-              [paddingLeft]="PaddingSize.XXLARGE"
-              [paddingBottom]="PaddingSize.LARGE"
-            >
-              <ui-heading
-                class="carousel-title"
-                [headingSize]="HeadingSize.HEADING_FIVE"
-                >{{ slide.title }}
-              </ui-heading>
-              <ui-text class="carousel-caption">{{ slide.caption }} </ui-text>
-            </ui-container>
+        <ui-container
+          *ngFor="let slide of slides; index as i"
+          class="carousel-content-container no-display"
+        >
+          <!--BAD DESIGN, MUST FIX WITH A PROPER UI-CONTAINER -->
+          <ui-container [paddingTop]="PaddingSize.LARGE">
+            <div class="carousel-content fade">
+              <a class="prev" (click)="this.slideControls(-1)"> &#10094; </a>
+              <ui-image
+                class="carousel-image"
+                [imageSrc]="slide.src"
+              ></ui-image>
+              <a class="next" (click)="this.slideControls(1)"> &#10095; </a>
+            </div>
           </ui-container>
-        </div>
+          <ui-text [textSize]="TextSize.XSMALL" class="center-text">
+            {{ i + 1 }} of {{ slides.length }}
+          </ui-text>
+          <ui-container
+            [paddingTop]="PaddingSize.SMALL"
+            [paddingLeft]="PaddingSize.XXLARGE"
+            [paddingBottom]="PaddingSize.LARGE"
+          >
+            <ui-heading
+              class="carousel-title"
+              [headingSize]="HeadingSize.HEADING_FIVE"
+              >{{ slide.title }}
+            </ui-heading>
+            <ui-text class="carousel-caption">{{ slide.caption }} </ui-text>
+          </ui-container>
+        </ui-container>
+        <ui-hr> </ui-hr>
       </ui-container>
     </ui-block>
   `,
