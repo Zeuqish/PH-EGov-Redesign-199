@@ -1,2 +1,29 @@
 @use 'src/styles.scss' as main;
 
+button{
+  margin: 2em 0em 2em 0em;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  border-radius: 1em;
+  font-family: 'Inter', sans-serif;
+  height: 45px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover{
+  color: #f2950b;
+}
+
+button:active{
+  background-color: #f2950b;
+  color: white;
+}

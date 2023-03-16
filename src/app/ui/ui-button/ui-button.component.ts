@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ButtonTypes, TextSize, BorderSize} from '../typedefs';
+import { ButtonTypes, TextSize} from '../typedefs';
 
 @Component({
   selector: 'ui-button',
@@ -11,7 +11,6 @@ import { ButtonTypes, TextSize, BorderSize} from '../typedefs';
 export class UIButtonComponent {
   @Input() buttonType: ButtonTypes = ButtonTypes.BUTTON;
   @Input() textSize: TextSize = TextSize.REGULAR;
-  @Input() borderSize: number = BorderSize.XSMALL;
   @Input() buttonColor: string = 'light gray';
   @Input() textColor: string = 'black';
   @Input() textAlign: string = 'center';
@@ -25,10 +24,11 @@ export class UIButtonComponent {
 
   getButtonDetails(){
     return `background-color: ${this.buttonColor};
-    border: ${this.borderSize};
     color: ${this.textColor};
     text-align: ${this.textAlign};
     text-decoration: none;
-    font-size: ${this.textSize};`;
+    font-size: ${this.textSize}px;
+    padding; `;
+
   }
 }
