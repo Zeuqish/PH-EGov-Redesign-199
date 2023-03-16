@@ -2,9 +2,8 @@
 
 .nav-bar{
   padding: .5em 1em .5em 1em;
-  margin-bottom: 2em;
   @include responsive($breakpoint-xl){
-    padding: 1em 2em 1em 2em;
+    padding: 0.5em 2em 0.5em 2em;
   }
 }
 
@@ -52,17 +51,17 @@ input[type=checkbox]{
 .menu li{
   top: -3em;
   display: flex;
-  padding: 0.5em 1em 0.5em 1em;
-  background-color: #666;
+  padding: 0.5em 1em;
+  outline: #666;
   @include responsive($breakpoint-m){
     display: inline;
     background-color: white;
   }
   @include responsive($breakpoint-xl){
-    padding: 1em 1.5em 1em 1.5em;
+    padding: 0.5em 1.5em;
   }
   @include responsive($breakpoint-xxl){
-    padding: 1em 3em 1em 3em;
+    padding: 0.5em 3em;
   }
 }
 
@@ -75,7 +74,7 @@ input[type=checkbox]{
 }
 
 li a {
-  color:white;
+  color: #666;
   font-family: 'Inter', sans-serif;
   line-height: 1.4;
   text-decoration: none;
@@ -91,17 +90,22 @@ li a {
   }
 }
 
-.menu li a:active {
-  color: #000;
+.menu li:active {
+  color: #f2950b;
   font-weight: bold;
 }
 
 
-.menu li a:hover {
-  color: #f2950b;
+.menu li:hover {
+  background-color:#f2950b;
   transition: 0.1s ease;
-  border-radius: 5px;
+  border-radius: 1px;
+  a {
+    color: white;
+  }
 }
+
+
 // /* Large */
 // @media screen and (max-width: 1280px){}
 
