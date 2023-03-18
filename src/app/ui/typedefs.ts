@@ -25,6 +25,7 @@ export enum HeadingSize {
   HEADING_THREE = 30,
   HEADING_FOUR = 27,
   HEADING_FIVE = 20,
+  HEADING_SIX = 17,
 }
 
 export enum FontWeight {
