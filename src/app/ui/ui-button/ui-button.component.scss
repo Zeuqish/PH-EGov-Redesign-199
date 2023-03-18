@@ -1,29 +1,29 @@
-@use 'src/styles.scss' as main;
+@use 'src/styles.scss' as *;
 
 button{
   margin: 2em 0em 2em 0em;
   padding: 0.5em 1.5em 0.5em 1.5em;
-  border-radius: 1em;
+  border-radius: 2em;
   font-family: 'Inter', sans-serif;
   height: 45px;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: $orange;
   border: none;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 }
 
 button:hover{
-  color: #f2950b;
+  color: $dark-blue;
 }
 
 button:active{
-  background-color: #f2950b;
-  color: white;
+  background-color: white;
+  color: $dark-blue;
 }

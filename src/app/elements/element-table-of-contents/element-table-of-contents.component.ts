@@ -18,7 +18,7 @@ import {
           PaddingSize.LARGE
         ]"
       >
-        <ui-heading [headingSize]="HeadingSize.HEADING_FIVE">
+        <ui-heading [headingSize]="HeadingSize.HEADING_SIX">
           {{ this.tocHeader }}
         </ui-heading>
         <ui-text>

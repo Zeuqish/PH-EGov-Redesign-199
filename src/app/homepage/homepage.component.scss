@@ -1,1 +1,39 @@
-@import "/src/styles.scss";
+@use 'src/styles.scss' as *;
+*{
+  scroll-behavior: smooth !important;
+  }
+
+.welcome{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.25em;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+  color: white;
+  @include responsive($breakpoint-m){
+    font-size: 20px;
+    line-height: 1em;
+  }
+  @include responsive($breakpoint-l){
+    font-size: 35px;
+    line-height: 1em;
+  }
+  @include responsive($breakpoint-xl){
+    font-size: 40px;
+    line-height: 1em;
+  }
+  @include responsive($breakpoint-xxl){
+    font-size: 50px;
+    line-height: 1.25em;
+  }
+}
+
+
+.table-of-contents{
+  list-style: none;
+}
+.table-of-contents li ui-link:hover{
+  color: white;
+}

@@ -1,7 +1,12 @@
 .toc-component {
-    background-color: lightgray;
+    background: rgba(212, 215, 210, 0.3);
     max-width: fit-content;
     height:100%;
+    border-radius: 2em;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
 }
 
 .center {

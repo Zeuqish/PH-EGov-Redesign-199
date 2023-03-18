@@ -10,11 +10,12 @@ import {
   selector: 'block-banner',
   template: `
     <ui-block
-      [colStart]="4"
-      [colEnd]="10"
+      [colStart]="3"
+      [colEnd]="12"
       [optionalGrid]="true"
       [optionalColStart]="1"
       [optionalColEnd]="13"
+
     >
       <ui-image optional [imageSrc]="this.backgroundImgSrc" style="z-index:-1;">
       </ui-image>
@@ -23,7 +24,8 @@ import {
         [split]="SplitColumnsPosition.RIGHT"
         [splitSize]="SplitColumnsSize.LARGE"
       >
-        <ui-container class="push-to-front">
+        <ui-container
+        class="push-to-front">
           <ui-container
             [padding]="[
               PaddingSize.MID,
