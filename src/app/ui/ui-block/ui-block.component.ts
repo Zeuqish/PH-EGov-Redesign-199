@@ -32,8 +32,11 @@ export class UIBlockComponent {
   @Input() optionalColStart: number = 3;
   @Input() optionalColEnd: number = 11;
 
+  @Input() PaddingTop: number = 16;
+  @Input() PaddingBottom: number = 16;
+
   getColumnSpan() {
-    return `--col-start: ${this.colStart}; --col-end: ${this.colEnd}`;
+    return `--col-start: ${this.colStart}; --col-end: ${this.colEnd}; padding-top: ${this.PaddingTop}px; padding-bottom: ${this.PaddingBottom}px; `;
   }
 
   getOptionalColumnSpan() {

@@ -8,7 +8,7 @@ import {
 @Component({
   selector: 'block-navbar',
   template: `
-    <ui-block>
+    <ui-block [PaddingTop]="0" [PaddingBottom]="0">
       <ui-nav-bar> </ui-nav-bar>
     </ui-block>
   `,

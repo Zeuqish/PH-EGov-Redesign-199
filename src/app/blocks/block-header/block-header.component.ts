@@ -8,7 +8,7 @@ import {
 @Component({
   selector: 'block-header',
   template: `
-    <ui-block [colStart]="4" [colEnd]="10">
+    <ui-block [colStart]="4" [colEnd]="10" [PaddingTop]="30" [PaddingBottom]="27">
       <ui-columns-split-type [splitSize]="SplitColumnsSize.SMALL">
         <div style="width:100px; margin:auto;">
           <ui-image [imageShape]="ImageShape.CIRCLE" [imageSrc]="this.imageSrc">

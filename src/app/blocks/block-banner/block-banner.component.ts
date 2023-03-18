@@ -15,6 +15,7 @@ import {
       [optionalGrid]="true"
       [optionalColStart]="1"
       [optionalColEnd]="13"
+      [PaddingTop]="0"
 
     >
       <ui-image optional [imageSrc]="this.backgroundImgSrc" style="z-index:-1;">

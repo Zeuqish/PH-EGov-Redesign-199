@@ -4,6 +4,7 @@
   }
 
 .welcome{
+  // padding-top: 2em;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -30,6 +31,17 @@
   }
 }
 
+.sub-welcome{
+  padding-top: 2em;
+  padding-bottom: 1em;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 2em;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+  color: white;}
 
 .table-of-contents{
   list-style: none;
