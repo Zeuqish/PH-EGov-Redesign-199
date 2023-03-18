@@ -18,6 +18,13 @@ $breakpoint-xxl: 1400px;
 $breakpoint-xxxl: 1500px;
 
 $orange: #f2950b;
+$dark-blue: #0e69a0;
+$light-blue: #24a1c6;
+$black: #111f1a;
+$brown: #53421e;
+$yellow: #f1d66f;
+
+
 
 // Responsible for column creation
 @mixin columns($count, $width) {
