@@ -15,17 +15,7 @@ import {
         </ui-container>
       </ui-columns>
       <ui-columns class="center-content">
-        <ui-container *ngFor="let elem of [1, 2, 3, 4]">
-          <element-card
-            [imageSrc]="'./assets/square.jpg'"
-            [articleText]="
-              'Aliquam sit amet leo a nisi elementum blandit eget et ligula. Curabitur
-      egestas metus at magna suscipit sollicitudin. Ut vulputate dignissim est
-      eu blandit. Duis laoreet neque turpis.'
-            "
-          >
-          </element-card>
-        </ui-container>
+        <ng-content></ng-content>
       </ui-columns>
     </ui-block>
   `,
