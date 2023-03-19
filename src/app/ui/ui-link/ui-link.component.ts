@@ -4,7 +4,7 @@ import { TextSize, FontWeight } from '../typedefs';
 @Component({
   selector: 'ui-link',
   template: `
-    <a href="{{ this.url }}" [style]="getLinkStyle()">
+    <a [routerLink]="this.url" [style]="getLinkStyle()">
       <ng-content></ng-content>
     </a>
   `,

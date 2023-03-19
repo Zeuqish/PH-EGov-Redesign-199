@@ -19,16 +19,15 @@ import { UIIframeComponent } from './ui-iframe/ui-iframe.component';
 import { UIHighlightComponent } from './ui-highlight/ui-highlight.component';
 import { UIClockComponent } from './ui-clock/ui-clock.component';
 
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { UILinkComponent } from './ui-link/ui-link.component';
 import { UIHrComponent } from './ui-hr/ui-hr.component';
 import { UIIconComponent } from './ui-icon/ui-icon.component';
-
+import { RouterModule } from '@angular/router';
 @NgModule({
-  imports: [CommonModule, BrowserModule],
+  imports: [CommonModule, BrowserModule, RouterModule],
   declarations: [
     UIBlockComponent,
     UIColumnsComponent,
