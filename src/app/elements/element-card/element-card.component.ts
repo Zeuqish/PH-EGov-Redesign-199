@@ -19,7 +19,9 @@ import {
           {{ this.titleText }}
         </ui-heading>
         <ui-text> {{ this.articleText }} </ui-text>
-        <ui-link [url]="this.articleLink">Read more...</ui-link>
+        <ui-link [url]="this.articleLink">
+          <ui-text> Read more... </ui-text>
+        </ui-link>
       </ui-container>
     </div>
 
