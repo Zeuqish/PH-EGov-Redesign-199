@@ -29,9 +29,6 @@ import {
 export class BlockTextComponent {
   @Input() splitType: SplitColumnsPosition = SplitColumnsPosition.LEFT;
 
-  @Input() headingContent: string = '';
-  @Input() textContent: string = '';
-
   HeadingSize = HeadingSize;
   SplitColumnsPosition = SplitColumnsPosition;
   PaddingSize = PaddingSize;
