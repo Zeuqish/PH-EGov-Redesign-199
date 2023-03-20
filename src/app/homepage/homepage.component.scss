@@ -15,7 +15,7 @@
   color: white;
   padding-top: 3em;
   @include responsive($breakpoint-m){
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1em;
   }
   @include responsive($breakpoint-l){
