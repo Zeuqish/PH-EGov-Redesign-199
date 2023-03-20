@@ -26,6 +26,7 @@ import { UILinkComponent } from './ui-link/ui-link.component';
 import { UIHrComponent } from './ui-hr/ui-hr.component';
 import { UIIconComponent } from './ui-icon/ui-icon.component';
 import { RouterModule } from '@angular/router';
+import { UIScrollableLinkComponent } from './ui-scrollable-link/ui-scrollable-link.component';
 @NgModule({
   imports: [CommonModule, BrowserModule, RouterModule],
   declarations: [
@@ -52,6 +53,7 @@ import { RouterModule } from '@angular/router';
     UIIframeComponent,
     UIHighlightComponent,
     UIClockComponent,
+    UIScrollableLinkComponent,
   ],
   exports: [
     UIBlockComponent,
@@ -77,6 +79,7 @@ import { RouterModule } from '@angular/router';
     UIIframeComponent,
     UIHighlightComponent,
     UIClockComponent,
+    UIScrollableLinkComponent,
   ],
 })
 export class UIModule {}
