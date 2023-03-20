@@ -9,9 +9,7 @@ import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
         <ui-heading class="welcome">
           How To Apply For YNARES Youth Scholarship
         </ui-heading>
-        <ui-button [buttonColor]="'#f2950b'" [textColor]="'white'">
-          Visit E-Service Form
-        </ui-button>
+        <ui-button> Visit E-Service Form </ui-button>
 
         <ui-container table-of-contents>
           <ul class="table-of-contents">

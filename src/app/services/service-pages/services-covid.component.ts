@@ -9,9 +9,7 @@ import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
         <ui-heading class="welcome">
           How To Get Free COVID Assistance
         </ui-heading>
-        <ui-button [buttonColor]="'#f2950b'" [textColor]="'white'">
-          Visit E-Service
-        </ui-button>
+        <ui-button> Visit E-Service </ui-button>
 
         <ui-container table-of-contents>
           <ul class="table-of-contents">
