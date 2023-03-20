@@ -16,7 +16,6 @@ import {
       [optionalColStart]="1"
       [optionalColEnd]="13"
       [PaddingTop]="0"
-
     >
       <ui-image optional [imageSrc]="this.backgroundImgSrc" style="z-index:-1;">
       </ui-image>
@@ -25,8 +24,7 @@ import {
         [split]="SplitColumnsPosition.RIGHT"
         [splitSize]="SplitColumnsSize.LARGE"
       >
-        <ui-container
-        class="push-to-front">
+        <ui-container class="push-to-front">
           <ui-container
             [padding]="[
               PaddingSize.MID,

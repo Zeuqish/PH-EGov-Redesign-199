@@ -9,9 +9,17 @@ import { ArticlesComponent } from './articles.component';
 import { ArticlePalaroComponent } from './article-palaro/article-palaro.component';
 import { ArticleFarmComponent } from './article-farm/article-farm.component';
 import { ArticleSolarComponent } from './article-solar/article-solar.component';
+import { ArticlesRoutingModule } from './articles-routing.module';
 
 @NgModule({
-  imports: [CommonModule, BrowserModule, UIModule, BlockModule, ElementsModule],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    UIModule,
+    BlockModule,
+    ElementsModule,
+    ArticlesRoutingModule,
+  ],
   declarations: [
     ArticlesComponent,
     ArticleCovidComponent,
