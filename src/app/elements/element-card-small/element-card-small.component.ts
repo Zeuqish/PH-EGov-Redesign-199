@@ -16,7 +16,7 @@ import {
         <ui-icon [iconSrc]="this.iconSrc" [iconSize]="this.iconSize"> </ui-icon>
       </div>
 
-      <ui-heading [headingSize]="HeadingSize.HEADING_FIVE">
+      <ui-heading class = "service-title" [headingSize]="HeadingSize.HEADING_FIVE">
         {{ this.cardText }}
       </ui-heading>
       <ui-text> {{ this.optionalCardSubText }} </ui-text>

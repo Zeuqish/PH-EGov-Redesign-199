@@ -14,7 +14,6 @@ import {
           <ui-heading> Our Services </ui-heading>
         </ui-container>
       </ui-columns>
-
       <ui-columns style="center-content">
         <ui-container *ngFor="let service of services">
           <element-card-small [iconSrc]="service[1]" [cardText]="service[0]">
@@ -34,10 +33,9 @@ export class BlockServiceListComponent {
   PaddingSize = PaddingSize;
 
   services = [
-    ['Service 1', './assets/icon1.svg'],
-    ['Service 2', './assets/icon1.svg'],
-    ['Service 3', './assets/icon1.svg'],
-    ['Service 4', './assets/icon1.svg'],
-    ['Service 4', './assets/icon1.svg'],
+    ['Provincial ID Application', './assets/icon/id_card.svg'],
+    ['Education Scholarships', './assets/icon/school.svg'],
+    ['Health Updates', './assets/icon/health_and_safety.svg'],
+    ['Investment Opportunity', './assets/icon/add_business.svg'],
   ];
 }
