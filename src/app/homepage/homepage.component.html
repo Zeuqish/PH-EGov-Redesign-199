@@ -10,18 +10,21 @@
   <ui-container table-of-contents class="hide">
     <ul class="table-of-contents">
       <li>
-        <a (click)= "scroll('news')" class="toc-list">
+        <a (click)= "scroll('services')" class="toc-list">
           Latest News
         </a>
       </li>
       <li>
-        <a (click)= "scroll('services')" class="toc-list">
-        Services
+        <a (click)= "scroll('officials')" class="toc-list">
+          Officials
         </a>
       </li>
     </ul>
   </ui-container>
 </block-banner>
+
+<block-service-list id="services">
+</block-service-list>
 
 <block-article id="news">
   <ui-container *ngFor="let article of articleContent">
@@ -35,10 +38,7 @@
   </ui-container>
 </block-article>
 
-<block-service-list id="services">
 
-</block-service-list>
-
-<block-officials-multiple>
+<block-officials-multiple id="officials">
 
 </block-officials-multiple>

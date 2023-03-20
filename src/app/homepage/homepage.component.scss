@@ -9,7 +9,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.25em;
-  display: flex;
+  display: none;
   align-items: center;
   letter-spacing: -0.04em;
   color: white;
@@ -22,6 +22,7 @@
     padding-top: 2em;
     font-size: 35px;
     line-height: 1em;
+    display: flex;
   }
   @include responsive($breakpoint-xl){
     padding-top: 0;
@@ -60,3 +61,4 @@
   color: white;
   cursor: pointer;
 }
+
