@@ -1,31 +1,27 @@
 <block-banner [backgroundImgSrc]="'./assets/banner/Blue_Rizal_Capitol.png'">
-  <ui-heading >
+  <ui-heading>
     <div class="welcome">The Official Website of the Rizal Provincial Government</div>
   </ui-heading>
   <ui-heading [headingSize]="HeadingSize.HEADING_SIX"><div class="sub-welcome">Local Government Services at your hands!</div></ui-heading>
-  <ui-button [buttonColor]="'#f2950b'" [textColor]="'white'">
-    Check Services
+
+  <ui-button (click)= "scroll('services')">
+        Check Services
   </ui-button>
-  <ui-container table-of-contents >
+  <ui-container table-of-contents class="hide">
     <ul class="table-of-contents">
       <li>
-        <a [href]="'#news'">
+        <a (click)= "scroll('news')" class="toc-list">
           Latest News
         </a>
       </li>
       <li>
-        <a [href]="'#services'">
+        <a (click)= "scroll('services')" class="toc-list">
         Services
         </a>
       </li>
     </ul>
   </ui-container>
 </block-banner>
-<ui-scrollable-link [target]="'services'">
-  <ui-text>
-    Go to services.
-  </ui-text>
-</ui-scrollable-link>
 
 <block-article id="news">
   <ui-container *ngFor="let article of articleContent">

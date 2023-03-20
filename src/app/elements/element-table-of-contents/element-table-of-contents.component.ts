@@ -19,7 +19,7 @@ import {
         ]"
       >
         <ui-heading [headingSize]="HeadingSize.HEADING_SIX">
-          {{ this.tocHeader }}
+          <div>{{ this.tocHeader }}</div>
         </ui-heading>
         <ui-text>
           <ng-content></ng-content>

@@ -5,8 +5,8 @@ button{
   padding: 0.5em 1.5em 0.5em 1.5em;
   border-radius: 1em;
   font-family: 'Inter', sans-serif;
-  height: 45px;
-  font-size: 11px;
+  height: fit-content;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -17,6 +17,11 @@ button{
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  @include responsive($breakpoint-l){
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    height: fit-content;
+    font-size: 20px;
+  }
 }
 
 button:hover{
