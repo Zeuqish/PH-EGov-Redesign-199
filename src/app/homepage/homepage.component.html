@@ -10,12 +10,12 @@
   <ui-container table-of-contents class="hide">
     <ul class="table-of-contents">
       <li>
-        <a [href]="'#news'">
+        <a (click)= "scroll('news')" class="toc-list">
           Latest News
         </a>
       </li>
       <li>
-        <a [href]="'#services'">
+        <a (click)= "scroll('services')" class="toc-list">
         Services
         </a>
       </li>

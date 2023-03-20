@@ -56,6 +56,7 @@
 .table-of-contents{
   list-style: none;
 }
-.table-of-contents li ui-link:hover{
+.table-of-contents li .toc-list:hover{
   color: white;
+  cursor: pointer;
 }
