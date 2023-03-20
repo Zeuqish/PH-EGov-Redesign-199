@@ -13,8 +13,6 @@ import { ButtonTypes, TextSize } from '../typedefs';
 export class UIButtonComponent {
   @Input() buttonType: ButtonTypes = ButtonTypes.BUTTON;
   @Input() textSize: TextSize = TextSize.REGULAR;
-  @Input() buttonColor: string = 'light gray';
-  @Input() textColor: string = 'black';
   @Input() textAlign: string = 'center';
 
   ngOnInit() {}
@@ -24,8 +22,7 @@ export class UIButtonComponent {
   }
 
   getButtonDetails() {
-    return `background-color: ${this.buttonColor};
-    color: ${this.textColor};
+    return `
     text-align: ${this.textAlign};
     text-decoration: none; `;
   }
