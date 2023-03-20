@@ -7,17 +7,19 @@
   // padding-top: 2em;
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.25em;
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
   color: white;
+  padding-top: 3em;
   @include responsive($breakpoint-m){
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1em;
   }
   @include responsive($breakpoint-l){
+    padding-top: 0;
     font-size: 35px;
     line-height: 1em;
   }
@@ -32,16 +34,23 @@
 }
 
 .sub-welcome{
-  padding-top: 2em;
-  padding-bottom: 1em;
+  padding-top: .5em;
+  padding-bottom: 0em;
   font-style: normal;
   font-weight: 200;
-  font-size: 15px;
+  font-size: 10px;
   line-height: 2em;
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
-  color: white;}
+  color: white;
+  @include responsive($breakpoint-m){
+    padding-bottom: 1em;
+    padding-top: 2em;
+    font-size: 15px;
+    line-height: 1em;
+  }
+}
 
 .table-of-contents{
   list-style: none;

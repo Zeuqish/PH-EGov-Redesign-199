@@ -27,7 +27,6 @@ export class UIButtonComponent {
     return `background-color: ${this.buttonColor};
     color: ${this.textColor};
     text-align: ${this.textAlign};
-    text-decoration: none;
-    font-size: ${this.textSize}px; `;
+    text-decoration: none; `;
   }
 }

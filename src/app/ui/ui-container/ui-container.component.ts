@@ -4,7 +4,7 @@ import { PaddingSize } from '../typedefs';
 @Component({
   selector: 'ui-container',
   template: `
-    <div [style]="getComponentDetails()">
+    <div class="container" [style]="getComponentDetails()">
       <ng-content></ng-content>
     </div>
   `,
