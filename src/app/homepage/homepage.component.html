@@ -21,6 +21,11 @@
     </ul>
   </ui-container>
 </block-banner>
+<ui-scrollable-link [target]="'services'">
+  <ui-text>
+    Go to services.
+  </ui-text>
+</ui-scrollable-link>
 
 <block-article id="news">
   <ui-container *ngFor="let article of articleContent">

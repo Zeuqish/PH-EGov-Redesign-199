@@ -53,4 +53,12 @@ export class HomepageComponent {
       link: '/articles/solar',
     },
   ];
+
+  scroll(target: string) {
+    let element = document.getElementById(target);
+    console.log(element);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
