@@ -7,7 +7,6 @@ import {
   IconSize,
   CardSmallBorderSize,
 } from 'src/app/ui/typedefs';
-
 @Component({
   selector: 'element-card-small',
   template: ` <ui-container>
@@ -16,7 +15,10 @@ import {
         <ui-icon [iconSrc]="this.iconSrc" [iconSize]="this.iconSize"> </ui-icon>
       </div>
 
-      <ui-heading class = "service-title" [headingSize]="HeadingSize.HEADING_FIVE">
+      <ui-heading
+        class="service-title"
+        [headingSize]="HeadingSize.HEADING_FIVE"
+      >
         {{ this.cardText }}
       </ui-heading>
       <ui-text> {{ this.optionalCardSubText }} </ui-text>
