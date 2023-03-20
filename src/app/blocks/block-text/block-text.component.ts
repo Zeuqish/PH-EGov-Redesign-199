@@ -8,9 +8,11 @@ import {
   selector: 'block-text',
   template: `
     <ui-block>
-      <ui-container [paddingBottom]="PaddingSize.LARGE">
+      <ui-container [paddingBottom]="PaddingSize.SMALL">
         <ng-content select="ui-heading"></ng-content>
+        <hr *ngIf="this.headingHr" />
       </ui-container>
+
       <ui-columns-split-type [split]="this.splitType">
         <ui-container *ngIf="this.splitType == SplitColumnsPosition.LEFT">
           <ng-content select="[left]"></ng-content>
@@ -28,6 +30,7 @@ import {
 })
 export class BlockTextComponent {
   @Input() splitType: SplitColumnsPosition = SplitColumnsPosition.LEFT;
+  @Input() headingHr: boolean = false;
 
   HeadingSize = HeadingSize;
   SplitColumnsPosition = SplitColumnsPosition;
