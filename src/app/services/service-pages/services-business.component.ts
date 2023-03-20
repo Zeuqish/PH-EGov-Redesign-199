@@ -7,6 +7,7 @@ import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
     <div class="background">
       <block-banner>
         <ui-heading class="welcome"> How To Get Business Permit </ui-heading>
+        <ui-button> Visit E-Service Form </ui-button>
         <ui-button>
           Visit E-Service Form
         </ui-button>
