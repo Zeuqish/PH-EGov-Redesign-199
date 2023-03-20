@@ -7,7 +7,7 @@ import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
     <div class="background">
       <block-banner>
         <ui-heading class="welcome"> How To Get IDs </ui-heading>
-        <ui-button [buttonColor]="'#f2950b'" [textColor]="'white'">
+        <ui-button>
           Visit E-Service
         </ui-button>
 
