@@ -8,6 +8,9 @@ import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
       <block-banner>
         <ui-heading class="welcome"> How To Get Business Permit </ui-heading>
         <ui-button> Visit E-Service Form </ui-button>
+        <ui-button>
+          Visit E-Service Form
+        </ui-button>
 
         <ui-container table-of-contents>
           <ul class="table-of-contents">
