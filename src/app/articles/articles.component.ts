@@ -12,20 +12,7 @@ import {
 
 @Component({
   selector: 'app-articles-handler',
-  template: `
-    <div *ngIf="this.articleID == 'covid'">
-      <article-covid></article-covid>
-    </div>
-    <div *ngIf="this.articleID == 'palaro'">
-      <article-palaro></article-palaro>
-    </div>
-    <div *ngIf="this.articleID == 'farm'">
-      <article-farm></article-farm>
-    </div>
-    <div *ngIf="this.articleID == 'solar'">
-      <article-solar></article-solar>
-    </div>
-  `,
+  template: ` <router-outlet></router-outlet> `,
   styleUrls: ['./articles.component.scss'],
 })
 export class ArticlesComponent {

@@ -8,17 +8,23 @@ import { UIModule } from './ui/ui.module';
 import { BlockModule } from './blocks/block.module';
 import { ElementsModule } from './elements/elements.module';
 import { ArticlesModule } from './articles/articles.module';
+import { ServicesModule } from './services/services.module';
+import { ServicesRoutingModule } from './services/services-routing.module';
+import { ArticlesRoutingModule } from './articles/articles-routing.module';
 
 @NgModule({
   imports: [
     ReactiveFormsModule,
     FormsModule,
     BrowserModule,
+    ServicesRoutingModule,
+    ArticlesRoutingModule,
     AppRoutingModule,
     UIModule,
     BlockModule,
     ElementsModule,
     ArticlesModule,
+    ServicesModule,
   ],
   declarations: [AppComponent, HomepageComponent],
   providers: [],
