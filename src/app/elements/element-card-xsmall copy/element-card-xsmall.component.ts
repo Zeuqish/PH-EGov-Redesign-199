@@ -5,11 +5,12 @@ import {
   HeadingSize,
   PaddingSize,
   IconSize,
+  ImageShape,
   CardSmallBorderSize,
 } from 'src/app/ui/typedefs';
 @Component({
-  selector: 'element-card-small',
-  template: ` <ui-container>
+  selector: 'element-card-xsmall',
+  template: `<ui-container>
     <div class="card-border" [style]="getCardBorderWidth()">
       <div class="center-icon">
         <ui-icon [iconSrc]="this.iconSrc" [iconSize]="this.iconSize"> </ui-icon>
@@ -21,13 +22,13 @@ import {
       >
         {{ this.cardText }}
       </ui-heading>
-      <ui-text> {{ this.optionalCardSubText }} </ui-text>
+      <ui-text [textSize]="TextSize.SMALL"> {{ this.optionalCardSubText }} </ui-text>
     </div>
   </ui-container>`,
 
-  styleUrls: ['./element-card-small.component.scss'],
+  styleUrls: ['./element-card-xsmall.component.scss'],
 })
-export class ElementCardSmallComponent {
+export class ElementCardXsmallComponent {
   @Input() textSize: number = TextSize.REGULAR;
   @Input() fontWeight: number = FontWeight.REGULAR;
   @Input() iconSize: IconSize = IconSize.XXLARGE;
@@ -41,6 +42,8 @@ export class ElementCardSmallComponent {
 
   HeadingSize = HeadingSize;
   PaddingSize = PaddingSize;
+  ImageShape = ImageShape;
+  TextSize = TextSize;
 
   getCardBorderWidth() {
     if (this.width == CardSmallBorderSize.FIT) {
@@ -52,3 +55,4 @@ export class ElementCardSmallComponent {
     }
   }
 }
+

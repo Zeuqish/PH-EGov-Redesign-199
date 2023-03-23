@@ -14,6 +14,7 @@ import { BlockFooterComponent } from './block-footer/block-footer.component';
 import { BlockNavbarComponent } from './block-navbar/block-navbar.component';
 import { BlockSlideshowComponent } from './block-slideshow/block-slideshow.component';
 import { RouterModule } from '@angular/router';
+import { BlockAwardsComponent } from './block-awards/block-awards.component';
 
 @NgModule({
   imports: [
@@ -28,6 +29,7 @@ import { RouterModule } from '@angular/router';
     BlockBannerComponent,
     BlockHeaderComponent,
     BlockArticleComponent,
+    BlockAwardsComponent,
     BlockServiceListComponent,
     BlockOfficialsMultComponent,
     BlockOfficialsSingleComponent,
@@ -40,6 +42,7 @@ import { RouterModule } from '@angular/router';
     BlockBannerComponent,
     BlockHeaderComponent,
     BlockArticleComponent,
+    BlockAwardsComponent,
     BlockServiceListComponent,
     BlockOfficialsMultComponent,
     BlockOfficialsSingleComponent,

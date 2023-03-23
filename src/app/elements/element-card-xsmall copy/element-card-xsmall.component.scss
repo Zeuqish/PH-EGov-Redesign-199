@@ -1,0 +1,24 @@
+@use 'src/styles.scss' as *;
+
+.card-border {
+    // border: 2px black solid;
+    border-radius: .5em;
+    padding: 2em 1em 2em 1em;
+    text-align: center;
+
+}
+.center-icon {
+    width: max-content;
+    margin: auto;
+    padding-bottom: 5px;
+    filter: invert(61%) sepia(49%) saturate(3141%) hue-rotate(2deg) brightness(105%) contrast(91%);
+}
+
+.optional-sub-text{
+  font-size: small;
+  color: gray;
+}
+
+.service-title{
+  color: black;
+}

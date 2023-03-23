@@ -6,6 +6,7 @@ import { ElementTableOfContentsComponent } from './element-table-of-contents/ele
 import { ElementCardComponent } from './element-card/element-card.component';
 import { ElementCardSmallComponent } from './element-card-small/element-card-small.component';
 import { ElementOfficialsCardSmallComponent } from './element-officials-card-small/element-officials-card-small.component';
+import { ElementCardXsmallComponent } from './element-card-xsmall copy/element-card-xsmall.component';
 
 @NgModule({
   imports: [CommonModule, BrowserModule, UIModule],
@@ -14,12 +15,14 @@ import { ElementOfficialsCardSmallComponent } from './element-officials-card-sma
     ElementCardComponent,
     ElementCardSmallComponent,
     ElementOfficialsCardSmallComponent,
+    ElementCardXsmallComponent,
   ],
   exports: [
     ElementTableOfContentsComponent,
     ElementCardComponent,
     ElementCardSmallComponent,
     ElementOfficialsCardSmallComponent,
+    ElementCardXsmallComponent,
   ],
 })
 export class ElementsModule {}
