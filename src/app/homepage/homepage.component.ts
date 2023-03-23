@@ -30,6 +30,7 @@ export class HomepageComponent {
       title: 'Covid Update in Rizal Province',
       blurb: 'COVID-19 Update in Rizal Province July 31, 2022 (Sunday)',
       link: '/articles/covid',
+      img: './assets/articles/article_covid.jpg',
     },
     {
       id: 1,
@@ -37,6 +38,7 @@ export class HomepageComponent {
       blurb:
         'Masayang binuksan ni Gob. Nina Ricci Ynares ang 2023 Palarong Panlalawigan sa Rizal sa Rizal National Science Highschool',
       link: '/articles/palaro',
+      img: './assets/articles/article_palaro.jpg',
     },
     {
       id: 2,
@@ -44,13 +46,15 @@ export class HomepageComponent {
       blurb:
         'Pinasinayaan ni Rizal Gob. Nina Ricci Ynares ang bagong tapos na Farm-to-Market Road Project sa Brgy. Cuyambay',
       link: '/articles/farm',
+      img: './assets/articles/article_farm.jpg',
     },
     {
       id: 3,
       title: 'Eco-Friendly Solar Streetlights',
       blurb:
-        'Pinasinayaan ni Rizal Gob. Nina Ricci Ynares ang bagong tapos na Farm-to-Market Road Project sa Brgy. Cuyambay',
+        'Installed at fully-functional na an gating mga Eco-Friendly Solar Streetlights sa bahagi ng Brgy. San Guillermo',
       link: '/articles/solar',
+      img: './assets/articles/article_solar.jpg',
     },
   ];
 

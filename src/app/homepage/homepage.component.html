@@ -27,17 +27,52 @@
 </block-service-list>
 
 <block-article id="news">
-  <ui-container *ngFor="let article of articleContent">
-    <element-card
-      [imageSrc]="'./assets/square.jpg'"
-      [articleText]="article.blurb + '...'"
-      [titleText]="article.title"
-      [articleLink]="article.link"
-    >
-    </element-card>
+  <ui-container>
+    <ui-image [imageSrc]="articleContent[0].img" style="width:60%">
+    </ui-image>
+    <ui-container [paddingTop]="PaddingSize.SMALL">
+      <ui-heading [headingSize]="HeadingSize.HEADING_FOUR">
+        Covid Update In Rizal Province
+      </ui-heading>
+      <ui-text>
+        {{ articleContent[0].blurb }}
+      </ui-text>
+    </ui-container>
+    
+    <ui-container [paddingTop]="PaddingSize.XXSMALL">
+      <ui-text>
+        <ui-link [url]="articleContent[0].link">
+          Read More
+        </ui-link>
+      </ui-text>
+    </ui-container>
+    <hr>
+    
+
+
+
+  </ui-container>
+  <ui-container>
+    <ui-container *ngFor="let article of articleContent | slice: 1" style="width:100%">
+      <ui-heading [headingSize]="HeadingSize.HEADING_FIVE">
+        {{ article.title }}
+      </ui-heading>
+      <ui-text>
+        {{ article.blurb }}...
+      </ui-text>
+      <ui-container [paddingTop]="PaddingSize.XSMALL">
+        <ui-text>
+          <ui-link [url]="article.link">
+            Read More
+          </ui-link>
+        </ui-text>
+      </ui-container>
+
+  
+      <hr>
+    </ui-container>
   </ui-container>
 </block-article>
-
 
 <block-awards id="awards">
 </block-awards>
