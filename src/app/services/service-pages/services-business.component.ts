@@ -6,13 +6,15 @@ import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
   template: `
     <div class="background">
       <block-banner>
-        <ui-heading class="welcome"> How To Get Business Permit </ui-heading>
+        <ui-heading class="welcome">
+          <div class="welcome">How To Get Business Permit</div>
+        </ui-heading>
         <ui-button> Visit E-Service Form </ui-button>
 
         <ui-container table-of-contents>
           <ul class="table-of-contents">
             <li *ngFor="let link of links">
-              <ui-scrollable-link [target]="link.id">
+              <ui-scrollable-link [target]="link.id" class="toc-list">
                 {{ link.text }}
               </ui-scrollable-link>
             </li>
