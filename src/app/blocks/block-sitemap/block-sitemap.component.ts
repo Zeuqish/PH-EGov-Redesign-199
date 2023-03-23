@@ -21,7 +21,7 @@ import {
             <ul class="site-map-list">
               <li>
                 <ui-link [url]="'/services/business-permit'">
-                  Business Permit
+                  Business Permit Application
                 </ui-link>
               </li>
               <li>

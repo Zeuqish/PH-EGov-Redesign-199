@@ -49,7 +49,7 @@ export class BlockServiceListComponent {
       '/services/covid',
     ],
     [
-      'Business Permit',
+      'Business Permit Application',
       './assets/icon/add_business.svg',
       '/services/business-permit',
     ],
