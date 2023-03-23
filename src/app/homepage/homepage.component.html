@@ -38,37 +38,35 @@
         {{ articleContent[0].blurb }}
       </ui-text>
     </ui-container>
-    
-    <ui-container [paddingTop]="PaddingSize.XXSMALL">
-      <ui-text>
+
+    <ui-container [paddingTop]="PaddingSize.XXSMALL" [paddingBottom]="PaddingSize.XXSMALL">
+      <ui-text [textSize]="TextSize.XSMALL">
         <ui-link [url]="articleContent[0].link">
-          Read More
+          <div class = "read-more-link">
+          Read More...
+          </div>
         </ui-link>
       </ui-text>
     </ui-container>
-    <hr>
-    
-
-
-
   </ui-container>
   <ui-container>
-    <ui-container *ngFor="let article of articleContent | slice: 1" style="width:100%">
+    <hr>
+    <ui-container *ngFor="let article of articleContent | slice: 1" style="width:100%" [paddingTop]="PaddingSize.XXSMALL">
       <ui-heading [headingSize]="HeadingSize.HEADING_FIVE">
         {{ article.title }}
       </ui-heading>
       <ui-text>
         {{ article.blurb }}...
       </ui-text>
-      <ui-container [paddingTop]="PaddingSize.XSMALL">
-        <ui-text>
-          <ui-link [url]="article.link">
-            Read More
-          </ui-link>
-        </ui-text>
+      <ui-container [paddingTop]="PaddingSize.XXSMALL" [paddingBottom]="PaddingSize.XXSMALL">
+          <ui-text [textSize]="TextSize.XSMALL">
+            <ui-link [url]="article.link">
+              <div class = "read-more-link">
+              Read More...
+              </div>
+            </ui-link>
+          </ui-text>
       </ui-container>
-
-  
       <hr>
     </ui-container>
   </ui-container>
