@@ -48,16 +48,6 @@ import {
               </ui-container>
             </ui-container>
           </ui-columns-split-type>
-          <ui-container>
-            <ui-heading [headingSize]="HeadingSize.HEADING_FIVE">
-              Contact Us
-            </ui-heading>
-            <ui-text>Tel. No. 1234-5678</ui-text>
-            <ui-text>
-              Circumferencial Road cor. P. Oliveros St.,Ynares Center Complex,
-              Antipolo City, 1870.
-            </ui-text>
-          </ui-container>
         </ui-columns-split-type>
       </ui-block>
     </div>
