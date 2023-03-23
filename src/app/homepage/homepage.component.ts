@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {
   FontWeight,
+  TextSize,
   HeadingSize,
   PaddingSize,
   SplitColumnsNumber,
@@ -23,6 +24,7 @@ export class HomepageComponent {
   SplitColumnsPosition = SplitColumnsPosition;
   SplitColumnsSize = SplitColumnsSize;
   ImageShape = ImageShape;
+  TextSize = TextSize;
 
   articleContent = [
     {

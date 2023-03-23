@@ -30,7 +30,9 @@ import {
         <br />
         <br />
         <ui-link [url]="'./history'">
-          Learn More about Rizal's History Here.
+          <div class="read-more-link">
+            Learn More about Rizal's History Here
+          </div>
         </ui-link>
       </ui-text>
 
