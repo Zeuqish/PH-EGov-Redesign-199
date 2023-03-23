@@ -16,6 +16,7 @@ import { BlockSlideshowComponent } from './block-slideshow/block-slideshow.compo
 import { RouterModule } from '@angular/router';
 import { BlockAwardsComponent } from './block-awards/block-awards.component';
 import { BlockTextNoSplitComponent } from './block-text-no-split/block-text-no-split.component';
+import { BlockSitemapComponent } from './block-sitemap/block-sitemap.component';
 
 @NgModule({
   imports: [
@@ -37,6 +38,7 @@ import { BlockTextNoSplitComponent } from './block-text-no-split/block-text-no-s
     BlockFooterComponent,
     BlockNavbarComponent,
     BlockSlideshowComponent,
+    BlockSitemapComponent,
     BlockTextNoSplitComponent,
   ],
   exports: [
@@ -52,6 +54,7 @@ import { BlockTextNoSplitComponent } from './block-text-no-split/block-text-no-s
     BlockNavbarComponent,
     BlockSlideshowComponent,
     BlockTextNoSplitComponent,
+    BlockSitemapComponent,
   ],
 })
 export class BlockModule {}

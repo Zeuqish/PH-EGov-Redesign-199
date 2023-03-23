@@ -12,9 +12,8 @@ import { TextSize, FontWeight } from '../typedefs';
           </div>
           <div class="menu">
             <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
             <li><a href="#">About the Province</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">The Provincial Government</a></li>
           </div>
         </ul>
     </div>

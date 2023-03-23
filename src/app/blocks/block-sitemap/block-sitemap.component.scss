@@ -1,0 +1,51 @@
+@use 'src/styles.scss' as *;
+
+.site-map{
+  padding-top: 2em;
+  background-color: $light-blue
+}
+
+.site-heading{
+  color: black;
+  margin-bottom: 0;
+}
+
+.site-map-list, .site-map-text{
+  margin-top: .5em;
+  font-family: 'Inter', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  text-decoration: none;
+  padding-left: 0px;
+}
+
+
+.site-map-list li{
+  padding: 0;
+  color: black;
+}
+
+.site-map-list li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.site-map-list li:hover{
+  color: $yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
