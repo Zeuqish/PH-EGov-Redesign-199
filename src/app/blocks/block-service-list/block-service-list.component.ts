@@ -15,7 +15,7 @@ import {
         </ui-container>
       </ui-columns>
       <ui-columns style="center-content">
-        <ui-container *ngFor="let service of services">
+        <ui-container *ngFor="let service of services" style="width: 100%">
           <element-card-small
             [iconSrc]="service[1]"
             [cardText]="service[0]"
