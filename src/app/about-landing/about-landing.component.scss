@@ -37,7 +37,7 @@
     padding-top: 2em;
     padding-bottom: 1em;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 15px;
     line-height: 2em;
     display: flex;
@@ -48,4 +48,14 @@
   .table-of-contents li .toc-list:hover{
     color: $white;
     cursor: pointer;
+  }
+
+  .read-more-link{
+    border: 2px $light-orange solid;
+    width: fit-content;
+    padding: .2em 1em;
+  }
+
+  .read-more-link:hover{
+    border: 2px $light-blue solid;
   }
