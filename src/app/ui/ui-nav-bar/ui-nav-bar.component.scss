@@ -94,6 +94,10 @@ li a {
   line-height: 1.4;
   text-align: center;
   display: block;
+  @include responsive($breakpoint-m){
+    display: inline;
+  }
+
 }
 
 .menu li:hover, .menu li a:hover, .menu li:active, .menu li a:active  {
