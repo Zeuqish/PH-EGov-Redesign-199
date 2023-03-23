@@ -13,11 +13,9 @@ import {
         <hr *ngIf="this.headingHr" />
       </ui-container>
 
-      <ui-columns>
-        <ui-container>
-          <ng-content select="ui-text"></ng-content>
-        </ui-container>
-      </ui-columns>
+      <ui-container>
+        <ng-content select="ui-text"></ng-content>
+      </ui-container>
     </ui-block>
   `,
 })
