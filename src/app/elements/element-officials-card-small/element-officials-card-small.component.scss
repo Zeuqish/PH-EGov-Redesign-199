@@ -1,10 +1,11 @@
 @use 'src/styles.scss' as *;
 
 .card-border {
-    border: 3px black solid;
+    border: 2px black solid;
+    border-radius: .5em;
     padding: 7vw 3vw;
     text-align: center;
-    height: 20vw;
+    height: 40vw;
     width: 20vw;
     @include responsive($breakpoint-s){
       width: 27vw;
@@ -22,7 +23,7 @@
     }
     @include responsive($breakpoint-xxl){
       width: 13vw;
-      height: 7vw;
+      height: 15vw;
     }
 }
 .center-icon {
@@ -31,6 +32,9 @@
     padding-bottom: 5px;
 }
 
+.optional-sub-text{
+  font-size: small;
+}
 
 .card-border:active{
   background-color: $orange;
