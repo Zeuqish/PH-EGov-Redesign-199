@@ -2,12 +2,18 @@
 
 .card-border {
     border: 3px black solid;
-    padding: 7vw 3vw;
+    padding: 4vw 2vw;
     text-align: center;
     width: 12em;
+    @include responsive($breakpoint-xs){
+      width: 20em;
+    }
     @include responsive($breakpoint-s){
+      width: 65vw;
+      padding: 5vw 2vw;
+    }
+    @include responsive($breakpoint-sm){
       width: 27vw;
-      height: 15vw;
       padding: 5vw 2vw;
     }
     @include responsive($breakpoint-m){
