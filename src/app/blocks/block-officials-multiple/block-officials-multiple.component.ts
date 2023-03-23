@@ -21,13 +21,14 @@ import {
           *ngFor="let officer of officers"
           style="height:100%; width: 100%"
         >
-          <element-card-small
-            [iconSrc]="officer[1]"
+          <element-officials-card-small
+            [imgSrc]="officer[1]"
             [cardText]="officer[0]"
-            [optionalCardSubText]="officer[2]"
+            [optionalCardRole]="officer[2]"
+            [optionalCardSubText]="officer[3]"
             [width]="CardSmallBorderSize.MAX"
           >
-          </element-card-small>
+          </element-officials-card-small>
         </ui-container>
       </ui-columns>
     </ui-block>
@@ -44,7 +45,7 @@ export class BlockOfficialsMultComponent {
   CardSmallBorderSize = CardSmallBorderSize;
 
   officers = [
-    ['Officer 1', './assets/icon1.svg', 'President'],
+    ['Hon. Rebecca A. Ynares', './assets/icon1.svg', 'Governor','2001-2004 / 2013 - present'],
     ['Officer 2', './assets/icon1.svg', 'Vice President'],
     ['Officer 3', './assets/icon1.svg', 'Secretary of Internal Affairs'],
     ['Officer 4', './assets/icon1.svg', 'Chairman of the Board'],
