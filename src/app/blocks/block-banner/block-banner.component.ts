@@ -41,7 +41,10 @@ import {
             <ng-content select="[subtitle]"> </ng-content>
           </ui-container>
         </ui-container>
-        <element-table-of-contents class="push-to-front">
+        <element-table-of-contents
+          class="push-to-front"
+          [tocHeader]="this.tocHeader"
+        >
           <ng-content select="[table-of-contents]"> </ng-content>
         </element-table-of-contents>
       </ui-columns-split-type>
@@ -52,6 +55,8 @@ import {
 export class BlockBannerComponent {
   @Input() headingContent: string = '';
   @Input() textContent: string = '';
+
+  @Input() tocHeader: string = 'In this page...';
 
   @Input() backgroundImgSrc: string = '';
 
