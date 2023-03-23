@@ -15,7 +15,8 @@ import {
       <div class="center-icon" style="max-width:75%">
         <ui-image
           [imageSrc]="this.imgSrc"
-          [imageShape]="ImageShape.SQUARE"
+          [imageShape]="ImageShape.CIRCLE"
+          [circleDiameter]="190"
         ></ui-image>
       </div>
 

@@ -1,35 +1,18 @@
 @use 'src/styles.scss' as *;
 
 .card-border {
-    border: 2px black solid;
     border-radius: .5em;
-    padding: 7vw 3vw;
+    padding: .5em .5em 1.5em .5em;
     text-align: center;
-    height: 40vw;
-    width: 20vw;
-    @include responsive($breakpoint-s){
-      width: 27vw;
-      height: 15vw;
-      padding: 5vw 2vw;
-    }
-    @include responsive($breakpoint-m){
-      width: 17vw;
-      height: 10vw;
-    }
-    @include responsive($breakpoint-l){
-      width: 13vw;
-      height: 10vw;
-      padding: 30px 10px 30px 10px;
-    }
-    @include responsive($breakpoint-xxl){
-      width: 13vw;
-      height: 15vw;
-    }
+    height: 18em;
+    width: 14em;
+    margin: auto;
 }
 .center-icon {
-    width: max-content;
-    margin: auto;
-    padding-bottom: 5px;
+  height: 12em;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: 1em;
 }
 
 .optional-sub-text{
