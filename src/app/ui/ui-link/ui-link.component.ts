@@ -4,7 +4,11 @@ import { TextSize, FontWeight } from '../typedefs';
 @Component({
   selector: 'ui-link',
   template: `
-    <a [routerLink]="this.url" [style]="getLinkStyle()">
+    <a
+      [routerLink]="this.url"
+      fragment="{{ this.url_fragment }}"
+      [style]="getLinkStyle()"
+    >
       <ng-content></ng-content>
     </a>
   `,
@@ -15,6 +19,7 @@ export class UILinkComponent {
   @Input() fontWeight: number = FontWeight.REGULAR;
 
   @Input() url: string = '';
+  @Input() url_fragment: string = '';
 
   // TODO: add link designs
   getLinkStyle() {

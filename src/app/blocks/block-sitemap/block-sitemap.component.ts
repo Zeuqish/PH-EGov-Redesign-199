@@ -47,7 +47,9 @@ import {
             </ui-heading>
             <ul class="site-map-list">
               <li>
-                <ui-link [url]="'/about'">Mission and Vision</ui-link>
+                <ui-link [url]="'/about'" [url_fragment]="'vision'">
+                  Mission and Vision
+                </ui-link>
               </li>
               <li><ui-link [url]="'/about/history'">History</ui-link></li>
               <li><ui-link [url]="'/about/governors'">Governors</ui-link></li>

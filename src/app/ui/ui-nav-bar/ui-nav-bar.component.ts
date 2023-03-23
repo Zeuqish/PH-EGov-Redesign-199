@@ -5,25 +5,29 @@ import { TextSize, FontWeight } from '../typedefs';
   selector: 'ui-nav-bar',
   template: `
     <div class="nav-bar">
-        <ul class="show">
-          <input type="checkbox" id="checkbox_toggle" />
-          <div class="toggle">
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-          </div>
+      <ul class="show">
+        <input type="checkbox" id="checkbox_toggle" />
+        <div class="toggle">
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        </div>
+        <ui-text>
           <div class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About the Province</a></li>
+            <li><ui-link [url]="'/home'">Home</ui-link></li>
+            <li>
+              <ui-link [url]="'/home'" [url_fragment]="'services'">
+                Services
+              </ui-link>
+            </li>
+            <li><ui-link [url]="'/about'">About the Province</ui-link></li>
           </div>
-        </ul>
+        </ui-text>
+      </ul>
     </div>
-
   `,
   styleUrls: ['./ui-nav-bar.component.scss'],
 })
 export class UINavBarComponent {
-
-  constructor() { }
+  constructor() {}
   navbarOpen = false;
 
   ngOnInit(): void {
@@ -34,4 +38,3 @@ export class UINavBarComponent {
     this.navbarOpen = !this.navbarOpen;
   }
 }
-
