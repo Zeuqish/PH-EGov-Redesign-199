@@ -10,6 +10,7 @@ import {
 @Component({
   selector: 'article-palaro',
   templateUrl: './article-palaro.component.html',
+  styleUrls: ['../articles.component.scss'],
 })
 export class ArticlePalaroComponent {
   FontWeight = FontWeight;
