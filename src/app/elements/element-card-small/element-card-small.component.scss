@@ -4,8 +4,7 @@
     border: 3px black solid;
     padding: 7vw 3vw;
     text-align: center;
-    height: 20vw;
-    width: 20vw;
+    width: 12em;
     @include responsive($breakpoint-s){
       width: 27vw;
       height: 15vw;
@@ -35,6 +34,15 @@
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
+.service-title{
+  text-align: center;
+  font-size: medium;
+  @include responsive($breakpoint-xxl){
+    font-size: inherit;
+  }
+
+}
+
 .card-border:active, .card-border:hover{
   background-color: $orange;
   color: white;
@@ -42,5 +50,8 @@
     filter: brightness(0) invert(1);
   }
   cursor: pointer;
+  .service-title{
+    color: white;
+  }
 }
 

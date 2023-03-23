@@ -10,7 +10,6 @@ import { TextSize, FontWeight } from '../typedefs';
         <div class="toggle">
           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         </div>
-        <ui-text>
           <div class="menu">
             <li><ui-link [url]="'/home'">Home</ui-link></li>
             <li>
@@ -20,7 +19,6 @@ import { TextSize, FontWeight } from '../typedefs';
             </li>
             <li><ui-link [url]="'/about'">About the Province</ui-link></li>
           </div>
-        </ui-text>
       </ul>
     </div>
   `,
