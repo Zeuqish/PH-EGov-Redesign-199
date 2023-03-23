@@ -143,3 +143,8 @@ export enum CardSmallBorderSize {
   FIT = 'fit-content',
   MAX = 'max-width',
 }
+
+export enum FontColor {
+  LIGHT = '$white',
+  DARK = '$black',
+}

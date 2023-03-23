@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { HeadingSize, FontWeight } from '../typedefs';
+import { HeadingSize, FontWeight, FontColor } from '../typedefs';
 
 @Component({
   selector: 'ui-heading',
