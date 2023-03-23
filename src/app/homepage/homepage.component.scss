@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
-  color: white;
+  color: $white;
   padding-top: 3em;
   @include responsive($breakpoint-m){
     font-size: 28px;
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
-  color: white;
+  color: $white;
   display: none;
   @include responsive($breakpoint-m){
     display: flex;
@@ -60,7 +60,7 @@
   list-style: none;
 }
 .table-of-contents li .toc-list:hover{
-  color: white;
+  color: $white;
   cursor: pointer;
 }
 
