@@ -24,13 +24,17 @@ import {
 
         <ui-container table-of-contents>
           <ul class="table-of-contents">
-            <li *ngFor="let link of links"></li>
+            <li *ngFor="let link of links">
+              <ui-link [url]="link.page" class="toc-list">
+                {{ link.text }}
+              </ui-link>
+            </li>
           </ul>
         </ui-container>
       </block-banner>
     </div>
 
-    <router-outlet> <about-page-intro></about-page-intro> </router-outlet>`,
+    <router-outlet> </router-outlet>`,
   styleUrls: ['./about-landing.component.scss'],
 })
 export class AboutPageComponent {
@@ -42,5 +46,9 @@ export class AboutPageComponent {
   SplitColumnsSize = SplitColumnsSize;
   ImageShape = ImageShape;
 
-  links = [{ page: 'history' }, {}, {}];
+  links = [
+    { page: './', text: 'About the Province' },
+    { page: './history', text: 'Our History' },
+    { page: './governors', text: 'Past Governors' },
+  ];
 }

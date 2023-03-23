@@ -8,6 +8,7 @@ import { AboutPageComponent } from './about-landing.component';
 import { AboutPageRoutingModule } from './about-routing.module';
 import { AboutHistoryComponent } from './about-history/about-history.component';
 import { AboutPageIntroComponent } from './about-landing-intro.component';
+import { AboutGovernorsComponent } from './about-governors/about-governors.component';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { AboutPageIntroComponent } from './about-landing-intro.component';
     AboutPageComponent,
     AboutHistoryComponent,
     AboutPageIntroComponent,
+    AboutGovernorsComponent,
   ],
 })
 export class AboutPageModule {}
