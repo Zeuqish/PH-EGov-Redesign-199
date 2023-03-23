@@ -16,10 +16,9 @@ import {
       </div>
 
       <ui-heading
-        class="service-title"
         [headingSize]="HeadingSize.HEADING_SIX"
       >
-        {{ this.cardText }}
+        <div class="service-title">{{ this.cardText }}</div>
       </ui-heading>
       <ui-text> {{ this.optionalCardSubText }} </ui-text>
     </div>
