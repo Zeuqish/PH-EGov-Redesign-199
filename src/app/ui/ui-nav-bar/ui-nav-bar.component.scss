@@ -16,7 +16,6 @@ ul {
   @include responsive($breakpoint-xxl){
     list-style-type: none;
   }
-
 }
 
 input[type=checkbox]{
