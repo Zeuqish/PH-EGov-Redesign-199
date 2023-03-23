@@ -8,16 +8,18 @@ import {
 @Component({
   selector: 'block-article',
   template: `
-    <ui-block>
-      <ui-columns class="center-content">
-        <ui-container [paddingBottom]="PaddingSize.LARGE">
-          <ui-heading> Latest Articles </ui-heading>
-        </ui-container>
-      </ui-columns>
-      <ui-columns class="center-content">
-        <ng-content></ng-content>
-      </ui-columns>
-    </ui-block>
+    <div class="latest-article">
+      <ui-block>
+        <ui-columns class="center-content">
+          <ui-container [paddingBottom]="PaddingSize.LARGE">
+            <ui-heading> Latest Articles </ui-heading>
+          </ui-container>
+        </ui-columns>
+        <ui-columns class="center-content">
+          <ng-content></ng-content>
+        </ui-columns>
+      </ui-block>
+    </div>
   `,
   styleUrls: ['./block-article.component.scss'],
 })

@@ -8,23 +8,25 @@ import {
 @Component({
   selector: 'block-service-list',
   template: `
-    <ui-block>
-      <ui-columns style="center-content">
-        <ui-container [paddingBottom]="PaddingSize.LARGE">
-          <ui-heading> Our Services </ui-heading>
-        </ui-container>
-      </ui-columns>
-      <ui-columns style="center-content">
-        <ui-container *ngFor="let service of services" style="width: 100%">
-          <element-card-small
-            [iconSrc]="service[1]"
-            [cardText]="service[0]"
-            [routerLink]="service[2]"
-          >
-          </element-card-small>
-        </ui-container>
-      </ui-columns>
-    </ui-block>
+    <div class="service-block">
+      <ui-block>
+        <ui-columns style="center-content">
+          <ui-container [paddingBottom]="PaddingSize.LARGE">
+            <ui-heading> Our Services </ui-heading>
+          </ui-container>
+        </ui-columns>
+        <ui-columns style="center-content">
+          <ui-container *ngFor="let service of services" style="width: 100%">
+            <element-card-small
+              [iconSrc]="service[1]"
+              [cardText]="service[0]"
+              [routerLink]="service[2]"
+            >
+            </element-card-small>
+          </ui-container>
+        </ui-columns>
+      </ui-block>
+    </div>
   `,
   styleUrls: ['./block-service-list.component.scss'],
 })
