@@ -5,7 +5,7 @@ import {
   PaddingSize,
 } from 'src/app/ui/typedefs';
 @Component({
-  selector: 'block-text',
+  selector: 'block-text-no-split',
   template: `
     <ui-block>
       <ui-container [paddingBottom]="PaddingSize.SMALL">
@@ -22,7 +22,6 @@ import {
   `,
 })
 export class BlockTextNoSplitComponent {
-  @Input() splitType: SplitColumnsPosition = SplitColumnsPosition.LEFT;
   @Input() headingHr: boolean = false;
 
   HeadingSize = HeadingSize;
