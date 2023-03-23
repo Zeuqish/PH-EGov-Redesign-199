@@ -11,6 +11,8 @@ import { ArticlesModule } from './articles/articles.module';
 import { ServicesModule } from './services/services.module';
 import { ServicesRoutingModule } from './services/services-routing.module';
 import { ArticlesRoutingModule } from './articles/articles-routing.module';
+import { AboutPageRoutingModule } from './about-landing/about-routing.module';
+import { AboutPageModule } from './about-landing/about-landing.module';
 
 @NgModule({
   imports: [
@@ -18,6 +20,7 @@ import { ArticlesRoutingModule } from './articles/articles-routing.module';
     FormsModule,
     BrowserModule,
     ServicesRoutingModule,
+    AboutPageRoutingModule,
     ArticlesRoutingModule,
     AppRoutingModule,
     UIModule,
@@ -25,6 +28,7 @@ import { ArticlesRoutingModule } from './articles/articles-routing.module';
     ElementsModule,
     ArticlesModule,
     ServicesModule,
+    AboutPageModule,
   ],
   declarations: [AppComponent, HomepageComponent],
   providers: [],
