@@ -12,8 +12,11 @@ import {
   selector: 'element-officials-card-small',
   template: `<ui-container>
     <div class="card-border" [style]="getCardBorderWidth()">
-      <div class="center-icon">
-        <ui-image [imageSrc]="this.imgSrc" [imageShape]="ImageShape.SQUARE"></ui-image>
+      <div class="center-icon" style="max-width:75%">
+        <ui-image
+          [imageSrc]="this.imgSrc"
+          [imageShape]="ImageShape.SQUARE"
+        ></ui-image>
       </div>
 
       <ui-heading
@@ -23,7 +26,9 @@ import {
         {{ this.cardText }}
       </ui-heading>
       <ui-text> {{ this.optionalCardRole }} </ui-text>
-      <ui-text [textSize]="TextSize.XSMALL"> {{ this.optionalCardSubText }} </ui-text>
+      <ui-text [textSize]="TextSize.XSMALL">
+        {{ this.optionalCardSubText }}
+      </ui-text>
     </div>
   </ui-container>`,
 
