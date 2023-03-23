@@ -12,7 +12,7 @@ import {
 
 @Component({
   selector: 'about-page-intro',
-  template: ` <block-text [headingHr]="true">
+  template: ` <block-text [headingHr]="true" id="vision">
       <ui-heading>About the Province</ui-heading>
       <ui-text>
         Rizal is one of the Philippines' first class provinces that belongs to

@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ArticlesComponent } from './articles/articles.component';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ServicesLandingComponent } from './services/services-landing.component';
+
+const routerOptions: ExtraOptions = {
+  anchorScrolling: 'enabled',
+  onSameUrlNavigation: 'reload',
+  scrollPositionRestoration: 'enabled',
+};
 
 const routes: Routes = [
   {
@@ -21,7 +26,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

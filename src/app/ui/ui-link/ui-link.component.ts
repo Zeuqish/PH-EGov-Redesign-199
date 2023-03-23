@@ -6,7 +6,7 @@ import { TextSize, FontWeight } from '../typedefs';
   template: `
     <a
       [routerLink]="this.url"
-      fragment="{{ this.url_fragment }}"
+      [fragment]="this.url_fragment"
       [style]="getLinkStyle()"
     >
       <ng-content></ng-content>
