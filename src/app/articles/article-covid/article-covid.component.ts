@@ -9,7 +9,7 @@ import {
 @Component({
   selector: 'article-covid',
   templateUrl: './article-covid.component.html',
-  styleUrls: ['./article-covid.component.scss'],
+  styleUrls: ['./article-covid.component.scss', '../articles.component.scss'],
 })
 export class ArticleCovidComponent {
   FontWeight = FontWeight;

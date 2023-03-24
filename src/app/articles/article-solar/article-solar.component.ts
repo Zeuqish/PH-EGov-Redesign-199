@@ -9,6 +9,7 @@ import {
 @Component({
   selector: 'article-solar',
   templateUrl: './article-solar.component.html',
+  styleUrls: ['../articles.component.scss'],
 })
 export class ArticleSolarComponent {
   FontWeight = FontWeight;
