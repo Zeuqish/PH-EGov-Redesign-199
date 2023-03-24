@@ -3,9 +3,9 @@
 .background {
     background-image: url('/assets/banner/Blue_Rizal_Capitol.png');
     background-attachment: fixed;
-  background-position:bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .white {
@@ -13,5 +13,7 @@
 }
 
 ui-icon {
+    position: relative;
+    top:1.5px;
     filter: invert(1);
 }
