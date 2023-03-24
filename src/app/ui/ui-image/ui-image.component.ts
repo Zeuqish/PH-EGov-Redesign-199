@@ -17,10 +17,14 @@ export class UIImageComponent {
   @Input() imageShape: ImageShape = ImageShape.SQUARE;
   @Input() imageSrc: string = '';
   @Input() altText: string = '';
+  @Input() circleDiameter: Number = 100;
+
   shapeImage() {
     if (this.imageShape == ImageShape.CIRCLE) {
       return `object-fit: cover;
-      border-radius: 50%;`;
+      border-radius: 50%;
+      height: ${this.circleDiameter}px;
+      width: ${this.circleDiameter}px;`;
     } else {
       return ``;
     }
