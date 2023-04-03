@@ -24,14 +24,6 @@ import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
     </div>
 
     <ui-block>
-      <ui-heading [headingSize]="HeadingSize.HEADING_FIVE">
-        Warning: This Page is only meant to showcase how local e-services could
-        look. This page ONLY CONTAINS PLACEHOLDER text, and all contents here
-        SHOULD NOT be used when applying for local government services.
-      </ui-heading>
-    </ui-block>
-
-    <ui-block>
       <ui-heading> How to Apply for Free COVID Assistance</ui-heading>
     </ui-block>
     <ui-block id="requirements">
