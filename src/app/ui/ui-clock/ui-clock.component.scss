@@ -1,4 +1,7 @@
+@use 'src/styles.scss' as *;
+
 .clock-component {
     font-family: 'Inter', sans-serif;
-    line-height: 1.4;
+    line-height: 1.0;
+    color: $white;
 }

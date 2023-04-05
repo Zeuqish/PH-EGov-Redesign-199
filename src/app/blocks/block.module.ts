@@ -18,6 +18,8 @@ import { BlockAwardsComponent } from './block-awards/block-awards.component';
 import { BlockTextNoSplitComponent } from './block-text-no-split/block-text-no-split.component';
 import { BlockSitemapComponent } from './block-sitemap/block-sitemap.component';
 import { BlockArticleTitleComponent } from './block-article-title/block-article-title.component';
+import { BlockTimeComponent } from './block-time/block-time.component';
+
 
 @NgModule({
   imports: [
@@ -42,6 +44,7 @@ import { BlockArticleTitleComponent } from './block-article-title/block-article-
     BlockSitemapComponent,
     BlockTextNoSplitComponent,
     BlockArticleTitleComponent,
+    BlockTimeComponent,
   ],
   exports: [
     BlockTextComponent,
@@ -58,6 +61,7 @@ import { BlockArticleTitleComponent } from './block-article-title/block-article-
     BlockTextNoSplitComponent,
     BlockSitemapComponent,
     BlockArticleTitleComponent,
+    BlockTimeComponent,
   ],
 })
 export class BlockModule {}

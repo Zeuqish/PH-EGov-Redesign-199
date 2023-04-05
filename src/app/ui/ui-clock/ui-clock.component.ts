@@ -6,7 +6,7 @@ import { map, share } from 'rxjs/operators';
   selector: 'ui-clock',
   template: `
   <div class="clock-component">
-        <div class="time">{{ rxTime | date: 'hh:mm:ss a' }}</div>
+        <div class="time">{{ rxTime | date: 'MMMM dd yyyy, EEEE, hh:mm:ss a' }}</div>
   </div>
   `,
   styleUrls: ['./ui-clock.component.scss'],
