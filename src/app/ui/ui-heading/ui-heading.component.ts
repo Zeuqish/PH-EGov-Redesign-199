@@ -13,9 +13,11 @@ import { HeadingSize, FontWeight, FontColor } from '../typedefs';
 export class UIHeadingComponent {
   @Input() headingSize: number = HeadingSize.HEADING_ONE;
   @Input() fontWeight: number = FontWeight.BOLD;
+  @Input() fontColor: FontColor = FontColor.DARK;
 
   getTextDetails() {
     return `font-size:${this.headingSize}px;
-    font-weight: ${this.fontWeight};`;
+    font-weight: ${this.fontWeight};
+    color: ${this.fontColor}`;
   }
 }
