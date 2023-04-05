@@ -145,6 +145,7 @@ export enum CardSmallBorderSize {
 }
 
 export enum FontColor {
-  LIGHT = '$white',
-  DARK = '$black',
+  LIGHT = '#EDF2F4',
+  DARK = '#1F1E1F',
+  ORANGE = '#f2950b',
 }

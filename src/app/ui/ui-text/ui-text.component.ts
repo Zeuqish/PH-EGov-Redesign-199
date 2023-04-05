@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TextSize, FontWeight } from '../typedefs';
+import { TextSize, FontWeight, FontColor } from '../typedefs';
 
 @Component({
   selector: 'ui-text',
@@ -13,9 +13,11 @@ import { TextSize, FontWeight } from '../typedefs';
 export class UITextComponent {
   @Input() textSize: number = TextSize.REGULAR;
   @Input() fontWeight: number = FontWeight.REGULAR;
+  @Input() fontColor: FontColor = FontColor.DARK;
 
   getTextDetails() {
     return `font-size:${this.textSize}px;
-    font-weight: ${this.fontWeight};`;
+    font-weight: ${this.fontWeight};
+    color: ${this.fontColor}`;
   }
 }

@@ -4,6 +4,7 @@ import {
   TextSize,
   HeadingSize,
   PaddingSize,
+  FontColor,
 } from 'src/app/ui/typedefs';
 
 @Component({
@@ -18,10 +19,13 @@ import {
           PaddingSize.LARGE
         ]"
       >
-        <ui-heading [headingSize]="HeadingSize.HEADING_SIX" [fontColor]="'white'">
-         {{ this.tocHeader }}
+        <ui-heading
+          [headingSize]="HeadingSize.HEADING_SIX"
+          [fontColor]="FontColor.LIGHT"
+        >
+          <div>{{ this.tocHeader }}</div>
         </ui-heading>
-        <ui-text>
+        <ui-text [fontColor]="FontColor.LIGHT">
           <ng-content></ng-content>
         </ui-text>
       </ui-container>
@@ -37,4 +41,5 @@ export class ElementTableOfContentsComponent {
 
   HeadingSize = HeadingSize;
   PaddingSize = PaddingSize;
+  FontColor = FontColor;
 }
