@@ -7,7 +7,7 @@
   // padding-top: 2em;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.25em;
   display: flex;
   align-items: center;
@@ -22,10 +22,11 @@
   @include responsive($breakpoint-l){
     padding-top: 1em;
     line-height: 1em;
+    font-size: 45px;
   }
   @include responsive($breakpoint-xl){
     padding-top: .3em;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 1em;
   }
   @include responsive($breakpoint-xxl){
