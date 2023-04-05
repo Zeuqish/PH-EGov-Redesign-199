@@ -12,7 +12,7 @@ import {
       [colStart]="4"
       [colEnd]="10"
       [PaddingTop]="30"
-      [PaddingBottom]="27"
+      [PaddingBottom]="5"
     >
       <ui-columns-split-type [splitSize]="SplitColumnsSize.SMALL">
         <div style="width:100px; margin:auto;">
