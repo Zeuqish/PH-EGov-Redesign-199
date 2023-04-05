@@ -5,7 +5,7 @@ import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
   selector: 'services-business',
   template: `
     <div class="background">
-      <block-banner>
+      <block-banner [textDark]="false">
         <ui-heading class="welcome">
           <div class="welcome">How To Get Business Permit</div>
         </ui-heading>
