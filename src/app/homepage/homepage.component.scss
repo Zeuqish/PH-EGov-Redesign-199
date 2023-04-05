@@ -7,24 +7,24 @@
   // padding-top: 2em;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.25em;
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
   color: $white;
-  padding-top: 3em;
+  padding-top: 1em;
   @include responsive($breakpoint-m){
-    font-size: 28px;
+    padding-top: .5em;
     line-height: 1em;
+    font-size: 40px;
   }
   @include responsive($breakpoint-l){
-    padding-top: 2em;
-    font-size: 35px;
+    padding-top: 1em;
     line-height: 1em;
   }
   @include responsive($breakpoint-xl){
-    padding-top: 0;
+    padding-top: .3em;
     font-size: 40px;
     line-height: 1em;
   }
@@ -34,33 +34,44 @@
   }
 }
 
+
 .sub-welcome{
   padding-top: 7em;
   padding-bottom: 0.5em;
   font-style: normal;
   font-weight: 200;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 2em;
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
   color: $white;
   display: none;
-  @include responsive($breakpoint-m){
+  @include responsive($breakpoint-l){
     display: flex;
     padding-bottom: 1em;
     padding-top: 2em;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1em;
   }
+}
 
+.button-services{
+  display: none;
+  @include responsive($breakpoint-l){
+    display: inline;
+  }
 }
 
 .table-of-contents{
   list-style: none;
 }
-.table-of-contents li .toc-list:hover{
+.table-of-contents li .toc-list{
   color: $white;
+}
+
+.table-of-contents li .toc-list:hover{
+  color: black;
   cursor: pointer;
 }
 

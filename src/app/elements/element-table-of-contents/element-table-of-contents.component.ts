@@ -18,8 +18,8 @@ import {
           PaddingSize.LARGE
         ]"
       >
-        <ui-heading [headingSize]="HeadingSize.HEADING_SIX">
-          <div>{{ this.tocHeader }}</div>
+        <ui-heading [headingSize]="HeadingSize.HEADING_SIX" [fontColor]="'white'">
+         {{ this.tocHeader }}
         </ui-heading>
         <ui-text>
           <ng-content></ng-content>
