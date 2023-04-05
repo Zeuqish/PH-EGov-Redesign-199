@@ -1,10 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {
   HeadingSize,
   SplitColumnsPosition,
   PaddingSize,
   SplitColumnsSize,
   ImageShape,
+  FontColor,
 } from 'src/app/ui/typedefs';
 @Component({
   selector: 'block-banner',
@@ -44,6 +45,8 @@ import {
         <element-table-of-contents
           class="push-to-front"
           [tocHeader]="this.tocHeader"
+          [headerFontColor]="contentColor"
+          [textFontColor]="contentColor"
         >
           <ng-content select="[table-of-contents]"> </ng-content>
         </element-table-of-contents>
@@ -52,17 +55,27 @@ import {
   `,
   styleUrls: ['./block-banner.component.scss'],
 })
-export class BlockBannerComponent {
+export class BlockBannerComponent implements OnInit {
   @Input() headingContent: string = '';
   @Input() textContent: string = '';
 
   @Input() tocHeader: string = 'In this page...';
 
   @Input() backgroundImgSrc: string = '';
+  @Input() textDark: boolean = true;
 
+  contentColor = FontColor.DARK;
+
+  FontColor = FontColor;
   HeadingSize = HeadingSize;
   SplitColumnsPosition = SplitColumnsPosition;
   PaddingSize = PaddingSize;
   SplitColumnsSize = SplitColumnsSize;
   ImageShape = ImageShape;
+
+  ngOnInit() {
+    if (this.textDark === false) {
+      this.contentColor = FontColor.LIGHT;
+    }
+  }
 }

@@ -15,8 +15,8 @@ import {
   template: `<div class="background">
       <block-banner [tocHeader]="'Jump to...'">
         <ui-heading class="welcome"> Learn About Rizal Province </ui-heading>
-        <ui-heading [headingSize]="HeadingSize.HEADING_SIX"
-          ><div class="sub-welcome">
+        <ui-heading [headingSize]="HeadingSize.HEADING_SIX">
+          <div class="sub-welcome">
             Discover more about Rizal's History, Past Governors, as well as
             other general information about the province and its people.
           </div>

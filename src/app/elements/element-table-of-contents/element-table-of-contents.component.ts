@@ -21,11 +21,11 @@ import {
       >
         <ui-heading
           [headingSize]="HeadingSize.HEADING_SIX"
-          [fontColor]="FontColor.LIGHT"
+          [fontColor]="headerFontColor"
         >
           <div>{{ this.tocHeader }}</div>
         </ui-heading>
-        <ui-text [fontColor]="FontColor.LIGHT">
+        <ui-text [fontColor]="textFontColor">
           <ng-content></ng-content>
         </ui-text>
       </ui-container>
@@ -36,6 +36,9 @@ import {
 export class ElementTableOfContentsComponent {
   @Input() textSize: number = TextSize.REGULAR;
   @Input() fontWeight: number = FontWeight.REGULAR;
+
+  @Input() headerFontColor: FontColor = FontColor.DARK;
+  @Input() textFontColor: FontColor = FontColor.DARK;
 
   @Input() tocHeader: string = 'In this page...';
 

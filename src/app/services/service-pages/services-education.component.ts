@@ -5,7 +5,7 @@ import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
   selector: 'services-education',
   template: `
     <div class="background">
-      <block-banner>
+      <block-banner [textDark]="false">
         <ui-heading>
           <div class="welcome">How To Apply For YNARES Youth Scholarship</div>
         </ui-heading>

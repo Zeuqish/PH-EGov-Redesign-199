@@ -5,7 +5,7 @@ import { HeadingSize, SplitColumnsPosition } from 'src/app/ui/typedefs';
   selector: 'services-covid',
   template: `
     <div class="background">
-      <block-banner>
+      <block-banner [textDark]="false">
         <ui-heading class="welcome">
           <div class="welcome">How To Get Free COVID Assistance</div>
         </ui-heading>
