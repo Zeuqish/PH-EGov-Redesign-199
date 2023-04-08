@@ -12,7 +12,7 @@ import {
   template: `
     <ui-block
       [colStart]="3"
-      [colEnd]="12"
+      [colEnd]="11"
       [optionalGrid]="true"
       [optionalColStart]="1"
       [optionalColEnd]="13"
