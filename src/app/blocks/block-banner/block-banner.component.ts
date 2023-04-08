@@ -42,8 +42,10 @@ import {
             <ng-content select="[subtitle]"> </ng-content>
           </ui-container>
         </ui-container>
+
         <element-table-of-contents
           class="push-to-front"
+          style="padding-top: 48px;"
           [tocHeader]="this.tocHeader"
           [headerFontColor]="contentColor"
           [textFontColor]="contentColor"
