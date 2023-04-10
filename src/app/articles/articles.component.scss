@@ -1,7 +1,7 @@
 @use 'src/styles.scss' as *;
 
 .background {
-    background-image: url('/assets/banner/Blue_Rizal_Capitol.png');
+    background-image: url('./assets/banner/Blue_Rizal_Capitol.png');
     background-attachment: fixed;
     background-position:bottom;
     background-repeat: no-repeat;
