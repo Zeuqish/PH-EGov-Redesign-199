@@ -23,7 +23,7 @@ import {
           [headingSize]="HeadingSize.HEADING_SIX"
           [fontColor]="headerFontColor"
         >
-          <div>{{ this.tocHeader }}</div>
+          <div style="padding-top: 24px;">{{ this.tocHeader }}</div>
         </ui-heading>
         <ui-text [fontColor]="textFontColor">
           <ng-content></ng-content>
